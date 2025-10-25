@@ -121,38 +121,38 @@ export const mockData = {
   memberships: [
     {
       id: 1,
-      name: "Day Pass",
+      name: "TRIAL ACCESS",
       price: "$25",
-      period: "per day",
-      description: "Perfect for trying us out or occasional training",
-      features: ["Full gym access", "Equipment usage", "Basic spotting available", "Valid for 24 hours"],
+      period: "per cycle",
+      description: "Perfect for system evaluation or occasional neural training",
+      features: ["Full facility access", "Quantum equipment usage", "Basic neural spotting", "Valid for 24 system hours"],
       popular: false
     },
     {
       id: 2,
-      name: "Weekly Pass",
+      name: "WEEKLY PROTOCOL",
       price: "$75",
       period: "per week",
-      description: "Great for short-term training blocks",
-      features: ["7 days unlimited access", "All equipment included", "Group class access", "Locker rental available"],
+      description: "Optimal for short-term enhancement blocks",
+      features: ["7 cycles unlimited access", "All quantum hardware included", "Group neural class access", "Storage pod rental available"],
       popular: false
     },
     {
       id: 3,
-      name: "Monthly Unlimited",
+      name: "NEURAL UNLIMITED",
       price: "$120",
       period: "per month",
-      description: "Our most popular membership option",
-      features: ["24/7 gym access", "All equipment included", "Free initial assessment", "Group classes included", "Guest pass (2 per month)"],
+      description: "Our most advanced membership protocol",
+      features: ["24/7 facility neural access", "All quantum equipment included", "Free initial enhancement assessment", "Group neural classes included", "Guest neural pass (2 per cycle)"],
       popular: true
     },
     {
       id: 4,
-      name: "Student Monthly",
+      name: "STUDENT NEURAL",
       price: "$90",
       period: "per month",
-      description: "Special rate for full-time students",
-      features: ["24/7 gym access", "All equipment included", "Student ID required", "Group classes included"],
+      description: "Special enhancement rate for full-time students",
+      features: ["24/7 facility neural access", "All quantum equipment included", "Student neural ID required", "Group neural classes included"],
       popular: false
     }
   ],
