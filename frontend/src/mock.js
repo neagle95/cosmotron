@@ -11,14 +11,14 @@ export const mockData = {
 
   // About Section
   about: {
-    title: "FORGED IN IRON, BUILT FOR CHAMPIONS",
-    description: "Since 2018, Cosmotron has been Perth's home for serious strength training. We believe that every lifter - from first-timer to elite competitor - deserves world-class coaching, premium equipment, and a community that pushes them to exceed their limits.",
-    philosophy: "Our philosophy is simple: technique first, intensity second, community always. Whether you're prepping for your first meet or chasing national records, we provide the tools, knowledge, and support to unlock your true potential.",
+    title: "NEURAL ENHANCEMENT PROTOCOLS",
+    description: "Since 2018, Cosmotron has been Perth's nexus for advanced strength augmentation. We believe that every lifter - from neural newcomers to cybernetic champions - deserves access to cutting-edge training protocols, quantum-grade equipment, and a collective that transcends human limitations.",
+    philosophy: "Our philosophy: Data-driven precision, AI-enhanced intensity, digital community convergence. Whether you're initializing your first training sequence or optimizing for competitive parameters, we provide the neural pathways, technological infrastructure, and collective intelligence to unlock your maximum potential.",
     stats: [
-      { number: "500+", label: "Members Strong" },
-      { number: "50+", label: "Competition Medals" },
-      { number: "6", label: "Years of Excellence" },
-      { number: "24/7", label: "Gym Access" }
+      { number: "500+", label: "Neural Links Active" },
+      { number: "50+", label: "Victory Protocols" },
+      { number: "6", label: "Years Online" },
+      { number: "24/7", label: "System Uptime" }
     ]
   },
 
