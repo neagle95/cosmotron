@@ -41,7 +41,7 @@ const Header = () => {
         left: 0,
         right: 0,
         zIndex: 1000,
-        backgroundColor: isScrolled ? 'rgba(26, 28, 27, 0.95)' : 'transparent',
+        background: isScrolled ? 'rgba(10, 10, 15, 0.95)' : 'transparent',
         backdropFilter: isScrolled ? 'blur(10px)' : 'none',
         transition: 'all 0.3s ease',
         borderBottom: isScrolled ? '1px solid var(--border-medium)' : 'none'
