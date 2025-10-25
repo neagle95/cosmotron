@@ -218,18 +218,18 @@ export const mockData = {
 
   // Contact Information
   contact: {
-    address: "123 Iron Street, Perth WA 6000",
+    address: "123 Neural Nexus Boulevard, Perth WA 6000",
     phone: "+61 8 9123 4567",
-    email: "info@cosmotrongym.com.au",
+    email: "neural@cosmotrongym.com.au",
     hours: {
       weekdays: "5:00 AM - 11:00 PM",
       saturday: "6:00 AM - 10:00 PM", 
       sunday: "7:00 AM - 9:00 PM"
     },
     socialMedia: {
-      instagram: "@cosmotrongym",
-      facebook: "CosmotronPowerlifting",
-      youtube: "CosmotronGym"
+      instagram: "@cosmotron_neural",
+      facebook: "CosmotronNeural",
+      youtube: "CosmotronQuantum"
     }
   }
 };
