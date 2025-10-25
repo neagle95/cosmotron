@@ -62,26 +62,26 @@ export const mockData = {
   equipment: [
     {
       id: 1,
-      name: "IPF-Standard Power Racks",
-      description: "Competition-spec Eleiko power racks with adjustable spotting arms and safety bars.",
+      name: "QUANTUM POWER MATRICES",
+      description: "Competition-spec Eleiko power racks with neural interface spotting systems and quantum-stabilized safety protocols.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
       id: 2,
-      name: "Calibrated Plates",
-      description: "Full set of Eleiko calibrated competition plates from 0.5kg to 25kg.",
+      name: "CALIBRATED MASS UNITS",
+      description: "Full spectrum Eleiko calibrated competition plates from 0.5kg to 25kg with molecular precision weighting.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     },
     {
       id: 3,
-      name: "Deadlift Platforms",
-      description: "6 custom-built deadlift platforms with premium rubber matting and proper dimensions.",
+      name: "DEADLIFT PLATFORMS 2.0",
+      description: "6 custom-engineered deadlift platforms with quantum-dampened rubber matrices and biomechanical optimization zones.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
       id: 4,
-      name: "Monolift System",
-      description: "Professional monolift for walk-out free squatting, perfect for max attempts.",
+      name: "NEURAL MONOLIFT SYSTEM",
+      description: "AI-enhanced monolift for walk-out free squatting with predictive load assistance and maximum lift protocols.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     }
   ],
