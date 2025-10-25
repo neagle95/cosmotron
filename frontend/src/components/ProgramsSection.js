@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Clock, DollarSign, CheckCircle, ArrowRight } from 'lucide-react';
+import { Clock, DollarSign, CheckCircle, ArrowRight, Zap, Cpu, Settings } from 'lucide-react';
 import { mockAPI } from '../mock';
 
 const ProgramsSection = ({ data }) => {
@@ -39,23 +39,30 @@ const ProgramsSection = ({ data }) => {
     }
   };
 
+  const getProgramIcon = (title) => {
+    if (title.includes('ELITE')) return <Zap size={24} />;
+    if (title.includes('INITIALIZATION')) return <Settings size={24} />;
+    if (title.includes('TECHNIQUE')) return <Cpu size={24} />;
+    return <ArrowRight size={24} />;
+  };
+
   return (
-    <section id="programs" className="section-padding" style={{
+    <section id="programs" className="section-padding circuit-bg" style={{
       background: 'var(--bg-card)',
       position: 'relative'
     }}>
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-large">
-          <h2 className="heading-1 fade-in" style={{ marginBottom: '30px' }}>
-            TRAINING PROGRAMS
+          <h2 className="heading-1 fade-in neon-text" style={{ marginBottom: '30px' }}>
+            TRAINING PROTOCOLS
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
             margin: '0 auto',
             color: 'var(--text-secondary)'
           }}>
-            From your first deadlift to competition podium - we have the program to get you there.
+            From neural initialization to elite enhancement - select the protocol matrix that matches your evolutionary path.
           </p>
         </div>
 
@@ -64,47 +71,78 @@ const ProgramsSection = ({ data }) => {
           {data.map((program, index) => (
             <div 
               key={program.id}
-              className="card fade-in"
+              className="card cyberpunk-border fade-in"
               style={{
                 animationDelay: `${index * 0.2}s`,
                 background: 'var(--bg-page)',
                 border: '2px solid var(--border-medium)',
                 position: 'relative',
-                overflow: 'visible'
+                overflow: 'hidden'
               }}
             >
               {/* Popular Badge */}
-              {program.title === 'Competition Prep' && (
+              {program.title === 'ELITE PROTOCOL' && (
                 <div style={{
                   position: 'absolute',
                   top: '-10px',
                   right: '30px',
-                  background: 'var(--brand-primary)',
-                  color: 'var(--text-inverse)',
+                  background: 'linear-gradient(135deg, var(--neon-magenta), var(--secondary-purple))',
+                  color: 'var(--neutral-white)',
                   padding: '8px 20px',
-                  borderRadius: '20px',
                   fontSize: '0.8rem',
                   fontWeight: 600,
                   textTransform: 'uppercase',
-                  letterSpacing: '0.05em'
+                  letterSpacing: '0.05em',
+                  fontFamily: 'Orbitron, Arial, sans-serif',
+                  boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
                 }}>
-                  MOST POPULAR
+                  MOST ADVANCED
                 </div>
               )}
 
-              <div className="card-content" style={{ padding: '40px' }}>
+              {/* Animated Background Effect */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: `linear-gradient(45deg, 
+                  rgba(0, 255, 255, 0.05), 
+                  rgba(255, 0, 255, 0.05), 
+                  transparent 50%)`,
+                opacity: 0,
+                transition: 'opacity 0.3s ease',
+                pointerEvents: 'none'
+              }} className="program-bg-effect" />
+
+              <div className="card-content" style={{ padding: '40px', position: 'relative', zIndex: 1 }}>
                 {/* Program Header */}
                 <div style={{ marginBottom: '30px' }}>
-                  <h3 className="heading-3" style={{ 
-                    marginBottom: '15px',
-                    color: 'var(--text-primary)'
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '15px',
+                    marginBottom: '15px'
                   }}>
-                    {program.title}
-                  </h3>
+                    <div style={{
+                      color: 'var(--neon-cyan)',
+                      filter: 'drop-shadow(0 0 10px var(--neon-cyan))'
+                    }}>
+                      {getProgramIcon(program.title)}
+                    </div>
+                    <h3 className="heading-3 neon-text-magenta" style={{ 
+                      margin: 0,
+                      fontFamily: 'Orbitron, Arial, sans-serif'
+                    }}>
+                      {program.title}
+                    </h3>
+                  </div>
                   
                   <p className="body-medium" style={{ 
                     marginBottom: '20px',
-                    lineHeight: 1.6
+                    lineHeight: 1.6,
+                    color: 'var(--text-secondary)'
                   }}>
                     {program.description}
                   </p>
@@ -117,10 +155,11 @@ const ProgramsSection = ({ data }) => {
                     flexWrap: 'wrap'
                   }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <DollarSign size={18} color="var(--brand-primary)" />
+                      <DollarSign size={18} color="var(--neon-cyan)" />
                       <span className="body-small" style={{ 
-                        color: 'var(--brand-primary)',
-                        fontWeight: 600
+                        color: 'var(--neon-cyan)',
+                        fontWeight: 600,
+                        fontFamily: 'Orbitron, Arial, sans-serif'
                       }}>
                         {program.price}
                       </span>
@@ -128,7 +167,7 @@ const ProgramsSection = ({ data }) => {
                     
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <Clock size={18} color="var(--text-secondary)" />
-                      <span className="body-small">
+                      <span className="body-small" style={{ color: 'var(--text-muted)' }}>
                         {program.duration}
                       </span>
                     </div>
@@ -140,9 +179,10 @@ const ProgramsSection = ({ data }) => {
                   <h4 className="heading-4" style={{ 
                     marginBottom: '20px',
                     fontSize: '1.1rem',
-                    color: 'var(--text-primary)'
+                    color: 'var(--text-primary)',
+                    fontFamily: 'Orbitron, Arial, sans-serif'
                   }}>
-                    What's Included:
+                    Enhancement Matrix:
                   </h4>
                   
                   <ul style={{ 
@@ -158,11 +198,25 @@ const ProgramsSection = ({ data }) => {
                           alignItems: 'center',
                           gap: '12px',
                           marginBottom: '12px',
-                          padding: '8px 0'
+                          padding: '8px 12px',
+                          background: 'rgba(0, 255, 255, 0.05)',
+                          border: '1px solid rgba(0, 255, 255, 0.2)',
+                          transition: 'all 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = 'rgba(0, 255, 255, 0.1)';
+                          e.currentTarget.style.borderColor = 'var(--neon-cyan)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(0, 255, 255, 0.05)';
+                          e.currentTarget.style.borderColor = 'rgba(0, 255, 255, 0.2)';
                         }}
                       >
-                        <CheckCircle size={16} color="var(--brand-primary)" />
-                        <span className="body-small" style={{ flex: 1 }}>
+                        <CheckCircle size={16} color="var(--neon-cyan)" />
+                        <span className="body-small" style={{ 
+                          flex: 1,
+                          color: 'var(--text-secondary)'
+                        }}>
                           {feature}
                         </span>
                       </li>
@@ -172,17 +226,18 @@ const ProgramsSection = ({ data }) => {
 
                 {/* CTA Button */}
                 <button 
-                  className="btn-primary"
+                  className="btn-primary cyberpunk-border"
                   onClick={() => handleInquiry(program)}
                   style={{
                     width: '100%',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '10px'
+                    gap: '10px',
+                    fontFamily: 'Orbitron, Arial, sans-serif'
                   }}
                 >
-                  Get Started
+                  INITIALIZE PROTOCOL
                   <ArrowRight size={18} />
                 </button>
               </div>
@@ -191,7 +246,7 @@ const ProgramsSection = ({ data }) => {
         </div>
       </div>
 
-      {/* Inquiry Modal */}
+      {/* Enhanced Inquiry Modal */}
       {isModalOpen && (
         <div style={{
           position: 'fixed',
@@ -199,26 +254,29 @@ const ProgramsSection = ({ data }) => {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'rgba(0, 0, 0, 0.8)',
+          background: 'rgba(0, 0, 0, 0.9)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           zIndex: 10000,
-          padding: '20px'
+          padding: '20px',
+          backdropFilter: 'blur(10px)'
         }}>
           <div style={{
             background: 'var(--bg-page)',
-            borderRadius: '16px',
+            border: '2px solid var(--neon-cyan)',
             padding: '40px',
             maxWidth: '500px',
             width: '100%',
-            border: '2px solid var(--border-medium)',
             maxHeight: '90vh',
-            overflowY: 'auto'
+            overflowY: 'auto',
+            position: 'relative',
+            boxShadow: '0 0 50px rgba(0, 255, 255, 0.3)'
           }}>
-            <h3 className="heading-3" style={{ 
+            <h3 className="heading-3 neon-text-magenta" style={{ 
               marginBottom: '10px',
-              textAlign: 'center'
+              textAlign: 'center',
+              fontFamily: 'Orbitron, Arial, sans-serif'
             }}>
               {selectedProgram?.title}
             </h3>
@@ -228,23 +286,26 @@ const ProgramsSection = ({ data }) => {
               marginBottom: '30px',
               color: 'var(--text-secondary)'
             }}>
-              Fill out this form and we'll contact you within 24 hours
+              Initialize neural link - response within 24 system cycles
             </p>
 
             {submitMessage ? (
               <div style={{
                 textAlign: 'center',
                 padding: '40px',
-                color: 'var(--brand-primary)'
+                color: 'var(--neon-cyan)'
               }}>
-                <CheckCircle size={48} style={{ marginBottom: '20px' }} />
+                <CheckCircle size={48} style={{ 
+                  marginBottom: '20px',
+                  filter: 'drop-shadow(0 0 20px var(--neon-cyan))'
+                }} />
                 <p className="body-large">{submitMessage}</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
                 <input
                   type="text"
-                  placeholder="Full Name"
+                  placeholder="User Designation"
                   value={inquiryForm.name}
                   onChange={(e) => setInquiryForm({...inquiryForm, name: e.target.value})}
                   required
@@ -254,15 +315,15 @@ const ProgramsSection = ({ data }) => {
                     marginBottom: '20px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-medium)',
-                    borderRadius: '8px',
                     color: 'var(--text-primary)',
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+                    fontFamily: 'Rajdhani, Arial, sans-serif'
                   }}
                 />
                 
                 <input
                   type="email"
-                  placeholder="Email Address"
+                  placeholder="Neural Link Address"
                   value={inquiryForm.email}
                   onChange={(e) => setInquiryForm({...inquiryForm, email: e.target.value})}
                   required
@@ -272,15 +333,15 @@ const ProgramsSection = ({ data }) => {
                     marginBottom: '20px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-medium)',
-                    borderRadius: '8px',
                     color: 'var(--text-primary)',
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+                    fontFamily: 'Rajdhani, Arial, sans-serif'
                   }}
                 />
                 
                 <input
                   type="tel"
-                  placeholder="Phone Number"
+                  placeholder="Communication Frequency"
                   value={inquiryForm.phone}
                   onChange={(e) => setInquiryForm({...inquiryForm, phone: e.target.value})}
                   required
@@ -290,9 +351,9 @@ const ProgramsSection = ({ data }) => {
                     marginBottom: '20px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-medium)',
-                    borderRadius: '8px',
                     color: 'var(--text-primary)',
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+                    fontFamily: 'Rajdhani, Arial, sans-serif'
                   }}
                 />
                 
@@ -306,20 +367,20 @@ const ProgramsSection = ({ data }) => {
                     marginBottom: '20px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-medium)',
-                    borderRadius: '8px',
                     color: 'var(--text-primary)',
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+                    fontFamily: 'Rajdhani, Arial, sans-serif'
                   }}
                 >
-                  <option value="">Select Experience Level</option>
-                  <option value="beginner">Complete Beginner</option>
-                  <option value="some">Some Experience</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
+                  <option value="">Select Enhancement Level</option>
+                  <option value="beginner">Neural Initiate</option>
+                  <option value="some">Basic Enhancement</option>
+                  <option value="intermediate">Advanced Protocol</option>
+                  <option value="advanced">Elite Operative</option>
                 </select>
                 
                 <textarea
-                  placeholder="What are your fitness goals?"
+                  placeholder="Enhancement objectives and target parameters..."
                   value={inquiryForm.goals}
                   onChange={(e) => setInquiryForm({...inquiryForm, goals: e.target.value})}
                   required
@@ -330,10 +391,10 @@ const ProgramsSection = ({ data }) => {
                     marginBottom: '30px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-medium)',
-                    borderRadius: '8px',
                     color: 'var(--text-primary)',
                     fontSize: '1rem',
-                    resize: 'vertical'
+                    resize: 'vertical',
+                    fontFamily: 'Rajdhani, Arial, sans-serif'
                   }}
                 />
                 
@@ -345,18 +406,24 @@ const ProgramsSection = ({ data }) => {
                     type="button"
                     onClick={() => setIsModalOpen(false)}
                     className="btn-secondary"
-                    style={{ flex: 1 }}
+                    style={{ 
+                      flex: 1,
+                      fontFamily: 'Orbitron, Arial, sans-serif'
+                    }}
                   >
-                    Cancel
+                    ABORT
                   </button>
                   
                   <button 
                     type="submit"
                     className="btn-primary"
                     disabled={isSubmitting}
-                    style={{ flex: 1 }}
+                    style={{ 
+                      flex: 1,
+                      fontFamily: 'Orbitron, Arial, sans-serif'
+                    }}
                   >
-                    {isSubmitting ? 'Submitting...' : 'Submit Inquiry'}
+                    {isSubmitting ? 'PROCESSING...' : 'SUBMIT INQUIRY'}
                   </button>
                 </div>
               </form>
@@ -364,6 +431,12 @@ const ProgramsSection = ({ data }) => {
           </div>
         </div>
       )}
+
+      <style jsx>{`
+        .card:hover .program-bg-effect {
+          opacity: 1 !important;
+        }
+      `}</style>
     </section>
   );
 };
