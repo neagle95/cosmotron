@@ -44,92 +44,127 @@
 }
 
 body {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Rajdhani', 'Orbitron', Arial, sans-serif;
   background-color: var(--bg-page);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
 }
 
-/* Typography System */
+/* Typography System - Cyberpunk Style */
 .brand-display {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Orbitron', Arial, sans-serif;
   font-weight: 900;
   font-size: clamp(4rem, 8vw, 8rem);
-  line-height: 0.76;
-  color: var(--text-primary);
+  line-height: 0.8;
+  color: var(--neon-cyan);
   text-transform: uppercase;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.1em;
+  text-shadow: 
+    0 0 10px var(--neon-cyan),
+    0 0 20px var(--neon-cyan),
+    0 0 40px var(--neon-cyan);
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from {
+    text-shadow: 
+      0 0 10px var(--neon-cyan),
+      0 0 20px var(--neon-cyan),
+      0 0 40px var(--neon-cyan);
+  }
+  to {
+    text-shadow: 
+      0 0 5px var(--neon-cyan),
+      0 0 15px var(--neon-cyan),
+      0 0 30px var(--neon-cyan);
+  }
 }
 
 .heading-1 {
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 900;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 800;
   font-size: clamp(3rem, 6vw, 6rem);
-  line-height: 0.8;
+  line-height: 0.9;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--neon-magenta);
+  letter-spacing: 0.08em;
+  text-shadow: 
+    0 0 10px var(--neon-magenta),
+    0 0 20px var(--neon-magenta);
 }
 
 .heading-2 {
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 800;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 0.9;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--neon-purple);
+  letter-spacing: 0.06em;
+  text-shadow: 
+    0 0 8px var(--neon-purple),
+    0 0 16px var(--neon-purple);
 }
 
 .heading-3 {
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 600;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
-  line-height: 1;
+  line-height: 1.1;
   text-transform: uppercase;
   color: var(--text-primary);
+  letter-spacing: 0.04em;
 }
 
 .heading-4 {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Rajdhani', Arial, sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.2;
   color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .body-large {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Rajdhani', Arial, sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 .body-medium {
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Rajdhani', Arial, sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-secondary);
 }
 
 .body-small {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Rajdhani', Arial, sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.4;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
-/* Button System */
+/* Cyberpunk Button System */
 .btn-primary {
-  background: var(--brand-primary);
-  color: var(--text-inverse);
-  border: none;
-  border-radius: 10rem;
-  padding: 1em 2em;
-  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--brand-primary), var(--secondary-purple));
+  color: var(--neutral-white);
+  border: 2px solid var(--brand-primary);
+  border-radius: 0;
+  padding: 1em 2.5em;
+  font-family: 'Orbitron', Arial, sans-serif;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -140,26 +175,48 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 0 20px rgba(255, 0, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
 }
 
 .btn-primary:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
-  color: var(--text-inverse);
+  box-shadow: 
+    0 0 30px rgba(255, 0, 255, 0.6),
+    inset 0 0 30px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  border-color: var(--neon-cyan);
 }
 
 .btn-primary:active {
-  transform: scale(0.98);
+  transform: translateY(0);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--brand-primary);
-  border: 2px solid var(--brand-primary);
-  border-radius: 10rem;
-  padding: 1em 2em;
-  font-family: 'Inter', Arial, sans-serif;
+  color: var(--neon-cyan);
+  border: 2px solid var(--neon-cyan);
+  border-radius: 0;
+  padding: 1em 2.5em;
+  font-family: 'Orbitron', Arial, sans-serif;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -170,17 +227,21 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.2),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
 }
 
 .btn-secondary:hover {
-  background: var(--brand-primary);
+  background: var(--neon-cyan);
   color: var(--text-inverse);
-  transform: scale(1.02);
-}
-
-.btn-secondary:active {
-  transform: scale(0.98);
+  box-shadow: 
+    0 0 30px rgba(0, 255, 255, 0.6),
+    inset 0 0 30px rgba(0, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Layout System */
