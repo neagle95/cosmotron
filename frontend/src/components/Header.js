@@ -60,12 +60,22 @@ const Header = () => {
             onClick={() => scrollToSection('hero')}
             style={{
               cursor: 'pointer',
-              fontFamily: 'Inter, Arial, sans-serif',
+              fontFamily: 'Orbitron, Arial, sans-serif',
               fontWeight: 900,
               fontSize: '1.8rem',
-              color: 'var(--brand-primary)',
+              color: 'var(--neon-cyan)',
               textTransform: 'uppercase',
-              letterSpacing: '0.05em'
+              letterSpacing: '0.1em',
+              textShadow: '0 0 10px var(--neon-cyan)',
+              transition: 'all 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.textShadow = '0 0 20px var(--neon-cyan)';
+              e.target.style.color = 'var(--neon-magenta)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.textShadow = '0 0 10px var(--neon-cyan)';
+              e.target.style.color = 'var(--neon-cyan)';
             }}
           >
             COSMOTRON
