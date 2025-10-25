@@ -91,29 +91,29 @@ export const mockData = {
     {
       id: 1,
       name: "Marcus Steel",
-      title: "Head Coach & Founder",
-      bio: "Former Australian powerlifting champion with 15+ years coaching experience. Specializes in competition preparation and technique refinement.",
-      achievements: ["Australian Record Holder (2019-2021)", "IPF World Championships Bronze", "15+ National Champions coached"],
+      title: "Chief Neural Engineer & System Architect",
+      bio: "Former Australian powerlifting champion with 15+ years neural coaching protocols. Specializes in competitive enhancement and biomechanical optimization algorithms.",
+      achievements: ["Australian Data Record Holder (2019-2021)", "IPF World Championships Neural Bronze", "15+ Elite Operatives Developed"],
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3",
-      specialties: ["Competition Prep", "Advanced Technique", "Mental Performance"]
+      specialties: ["Elite Protocol Development", "Advanced Neural Techniques", "Cognitive Performance"]
     },
     {
       id: 2,
       name: "Sarah Thunder",
-      title: "Senior Coach",
-      bio: "Exercise science graduate and competitive powerlifter. Expert in beginner development and injury prevention protocols.",
-      achievements: ["State Champion (3x)", "Exercise Science Degree", "100+ beginners coached"],
+      title: "Senior Enhancement Specialist",
+      bio: "Exercise science neural graduate and competitive powerlifter. Expert in initiate development and system integrity prevention protocols.",
+      achievements: ["State Neural Champion (3x)", "Exercise Science Neural Degree", "100+ Initiates Enhanced"],
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3",
-      specialties: ["Beginner Training", "Injury Prevention", "Movement Analysis"]
+      specialties: ["Initiate Training", "System Integrity", "Movement Analysis"]
     },
     {
       id: 3,
       name: "Jake Ironside",
-      title: "Strength Coach",
-      bio: "Former strongman competitor turned powerlifting coach. Brings unique perspective on accessory work and strength development.",
-      achievements: ["WA Strongest Man (2x)", "Powerlifting Coach Certification", "Accessory Specialist"],
+      title: "Quantum Strength Engineer",
+      bio: "Former strongman competitor turned powerlifting neural coach. Brings unique perspective on auxiliary work and quantum strength development algorithms.",
+      achievements: ["WA Strongest Cyborg (2x)", "Powerlifting Neural Coach Certification", "Auxiliary Systems Specialist"],
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3",
-      specialties: ["Accessory Programming", "Strength Development", "Program Design"]
+      specialties: ["Auxiliary Programming", "Quantum Development", "Algorithm Design"]
     }
   ],
 
