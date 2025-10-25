@@ -26,35 +26,35 @@ export const mockData = {
   programs: [
     {
       id: 1,
-      title: "Competition Prep",
-      description: "12-16 week intensive programs designed to peak your squat, bench, and deadlift for competition day.",
-      features: ["Meet simulation training", "Competition commands practice", "Peak strength programming", "Mental preparation coaching"],
-      price: "$180/week",
-      duration: "12-16 weeks"
+      title: "ELITE PROTOCOL",
+      description: "12-16 week neural optimization sequence designed to maximize your squat, bench, and deadlift performance matrix for competitive deployment.",
+      features: ["Combat simulation training", "Neural command integration", "Peak performance algorithms", "Cognitive enhancement protocols"],
+      price: "$180/cycle",
+      duration: "12-16 cycles"
     },
     {
       id: 2,
-      title: "Beginner Foundations",
-      description: "Learn the fundamentals of powerlifting with expert coaching focused on proper technique and injury prevention.",
-      features: ["Movement pattern mastery", "Progressive loading", "Safety protocols", "Nutrition guidance"],
-      price: "$120/week",
-      duration: "8-12 weeks"
+      title: "INITIALIZATION SEQUENCE", 
+      description: "Master the fundamental movement algorithms with AI-guided coaching focused on biomechanical optimization and system integrity.",
+      features: ["Movement pattern encoding", "Progressive load distribution", "Safety firewall protocols", "Nutritional data optimization"],
+      price: "$120/cycle",
+      duration: "8-12 cycles"
     },
     {
       id: 3,
-      title: "Technique Refinement",
-      description: "Perfect your lifts with video analysis and personalized coaching to break through plateaus.",
-      features: ["Video movement analysis", "Accessory exercise selection", "Weakness identification", "Form optimization"],
-      price: "$150/week",
-      duration: "6-8 weeks"
+      title: "TECHNIQUE ENHANCEMENT",
+      description: "Perfect your lifting sequences with holographic analysis and personalized AI coaching to bypass performance bottlenecks.",
+      features: ["3D movement analysis", "Auxiliary system selection", "Performance gap identification", "Biomechanical optimization"],
+      price: "$150/cycle", 
+      duration: "6-8 cycles"
     },
     {
       id: 4,
-      title: "Personal Training",
-      description: "One-on-one coaching tailored to your specific goals, schedule, and experience level.",
-      features: ["Customized programming", "Flexible scheduling", "Individual attention", "Goal-specific training"],
+      title: "NEURAL INTERFACE",
+      description: "Direct one-on-one neural linking with elite trainers tailored to your specific enhancement goals and operational schedule.",
+      features: ["Custom algorithm programming", "Adaptive scheduling matrix", "Individual neural attention", "Goal-specific enhancement"],
       price: "$80/session",
-      duration: "Ongoing"
+      duration: "Continuous"
     }
   ],
 
