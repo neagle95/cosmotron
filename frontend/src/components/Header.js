@@ -109,12 +109,26 @@ const Header = () => {
             style={{
               display: 'none',
               background: 'none',
-              border: 'none',
-              color: 'var(--brand-primary)',
+              border: '2px solid var(--neon-cyan)',
+              color: 'var(--neon-cyan)',
               fontSize: '1.5rem',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              padding: '8px',
+              borderRadius: '0',
+              boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)',
+              transition: 'all 0.3s ease'
             }}
             className="mobile-menu-button"
+            onMouseEnter={(e) => {
+              e.target.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.6)';
+              e.target.style.color = 'var(--text-inverse)';
+              e.target.style.backgroundColor = 'var(--neon-cyan)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.boxShadow = '0 0 10px rgba(0, 255, 255, 0.3)';
+              e.target.style.color = 'var(--neon-cyan)';
+              e.target.style.backgroundColor = 'transparent';
+            }}
           >
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
