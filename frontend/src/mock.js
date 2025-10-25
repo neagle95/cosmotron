@@ -4,9 +4,9 @@ export const mockData = {
   // Hero Section
   hero: {
     title: "COSMOTRON",
-    slogan: "WHERE STRENGTH IS BORN",
-    subtitle: "Elite powerlifting training meets beginner-friendly coaching in Perth's premier strength facility.",
-    backgroundImage: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
+    slogan: "WHERE STRENGTH IS FORGED",
+    subtitle: "Elite powerlifting protocols meet neural enhancement training in Perth's most advanced strength facility. Join the revolution.",
+    backgroundImage: "https://customer-assets.emergentagent.com/job_cosmotron-lift/artifacts/y7cv6qi4_file_0000000015586230bbc3a706feb53869_conversation_id%3D67ffb4f5-5e74-8012-b17e-3fbcd28753a7%26message_id%3D829414af-438b-439d-ab88-a793497798f3.png"
   },
 
   // About Section
