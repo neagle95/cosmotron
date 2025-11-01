@@ -1,11 +1,14 @@
 // Mock data for Cosmotron Powerlifting Gym
 
 export const mockData = {
+// Mock data for Cosmotron Powerlifting Gym
+
+export const mockData = {
   // Hero Section
   hero: {
     title: "COSMOTRON",
-    slogan: "WHERE STRENGTH IS FORGED",
-    subtitle: "Elite powerlifting protocols meet neural enhancement training in Perth's most advanced strength facility. Join the revolution.",
+    slogan: "POWER BEYOND GRAVITY",
+    subtitle: "A powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place in Szeged.",
     backgroundImage: "https://customer-assets.emergentagent.com/job_cosmotron-lift/artifacts/y7cv6qi4_file_0000000015586230bbc3a706feb53869_conversation_id%3D67ffb4f5-5e74-8012-b17e-3fbcd28753a7%26message_id%3D829414af-438b-439d-ab88-a793497798f3.png"
   },
 
