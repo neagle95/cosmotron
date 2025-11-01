@@ -199,18 +199,18 @@ export const mockData = {
 
   // Contact Information
   contact: {
-    address: "123 Neural Nexus Boulevard, Perth WA 6000",
-    phone: "+61 8 9123 4567",
-    email: "neural@cosmotrongym.com.au",
+    address: "Szeged, Hungary (Address will be provided later)",
+    phone: "(Phone number will be provided later)",
+    email: "(Email will be provided later)",
     hours: {
-      weekdays: "5:00 AM - 11:00 PM",
-      saturday: "6:00 AM - 10:00 PM", 
-      sunday: "7:00 AM - 9:00 PM"
+      weekdays: "(Opening hours will be provided later)",
+      saturday: "(Opening hours will be provided later)", 
+      sunday: "(Opening hours will be provided later)"
     },
     socialMedia: {
-      instagram: "@cosmotron_neural",
-      facebook: "CosmotronNeural",
-      youtube: "CosmotronQuantum"
+      instagram: "@cosmotron_szeged",
+      facebook: "CosmotronSzeged",
+      youtube: "CosmotronGym"
     }
   }
 };
