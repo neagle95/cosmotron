@@ -1,9 +1,6 @@
 // Mock data for Cosmotron Powerlifting Gym
 
 export const mockData = {
-// Mock data for Cosmotron Powerlifting Gym
-
-export const mockData = {
   // Hero Section
   hero: {
     title: "COSMOTRON",
