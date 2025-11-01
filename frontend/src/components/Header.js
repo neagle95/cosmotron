@@ -23,13 +23,11 @@ const Header = () => {
   };
 
   const navigationItems = [
-    { label: 'Home', id: 'hero' },
-    { label: 'About', id: 'about' },
-    { label: 'Programs', id: 'programs' },
+    { label: 'About Us', id: 'about' },
+    { label: 'Leaderboard', id: 'leaderboard' },
+    { label: 'Booking', id: 'booking' },
     { label: 'Equipment', id: 'equipment' },
-    { label: 'Trainers', id: 'trainers' },
-    { label: 'Membership', id: 'membership' },
-    { label: 'Schedule', id: 'schedule' },
+    { label: 'Pricing', id: 'pricing' },
     { label: 'Contact', id: 'contact' }
   ];
 
