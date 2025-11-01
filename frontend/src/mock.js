@@ -57,26 +57,26 @@ export const mockData = {
   equipment: [
     {
       id: 1,
-      name: "QUANTUM POWER MATRICES",
-      description: "Competition-spec Eleiko power racks with neural interface spotting systems and quantum-stabilized safety protocols.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
-    },
-    {
-      id: 2,
-      name: "CALIBRATED MASS UNITS",
-      description: "Full spectrum Eleiko calibrated competition plates from 0.5kg to 25kg with molecular precision weighting.",
+      name: "CALIBRATED PLATES",
+      description: "Competition-grade calibrated plates meeting IPF standards for precise weight measurements.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     },
     {
+      id: 2,
+      name: "COMPETITION BARBELLS",
+      description: "IPF-approved competition barbells for squat, bench press, and deadlift with proper specifications.",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
+    },
+    {
       id: 3,
-      name: "DEADLIFT PLATFORMS 2.0",
-      description: "6 custom-engineered deadlift platforms with quantum-dampened rubber matrices and biomechanical optimization zones.",
+      name: "COMBO RACKS",
+      description: "Versatile combo racks for safe squatting and bench pressing with adjustable safety settings.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
       id: 4,
-      name: "NEURAL MONOLIFT SYSTEM",
-      description: "AI-enhanced monolift for walk-out free squatting with predictive load assistance and maximum lift protocols.",
+      name: "MACHINES & ACCESSORIES",
+      description: "Supporting machines and accessories for auxiliary work and comprehensive strength training.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     }
   ],
