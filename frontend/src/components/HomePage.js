@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { mockData, mockAPI } from '../mock';
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
-import ProgramsSection from './ProgramsSection';
+import LeaderboardSection from './LeaderboardSection';
+import BookingSection from './BookingSection';
 import EquipmentSection from './EquipmentSection';
-import TrainersSection from './TrainersSection';
-import MembershipSection from './MembershipSection';
-import ScheduleSection from './ScheduleSection';
+import PricingSection from './PricingSection';
 import ContactSection from './ContactSection';
 import Header from './Header';
 import Footer from './Footer';
@@ -43,11 +42,10 @@ const HomePage = () => {
       <Header />
       <HeroSection data={data.hero} />
       <AboutSection data={data.about} />
-      <ProgramsSection data={data.programs} />
+      <LeaderboardSection data={data.leaderboard} />
+      <BookingSection />
       <EquipmentSection data={data.equipment} />
-      <TrainersSection data={data.trainers} />
-      <MembershipSection data={data.memberships} />
-      <ScheduleSection data={data.schedule} />
+      <PricingSection data={data.pricing} />
       <ContactSection data={data.contact} />
       <Footer data={data.contact} />
     </div>
