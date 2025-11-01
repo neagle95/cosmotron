@@ -112,45 +112,31 @@ export const mockData = {
     }
   ],
 
-  // Membership Plans
-  memberships: [
-    {
-      id: 1,
-      name: "TRIAL ACCESS",
-      price: "$25",
-      period: "per cycle",
-      description: "Perfect for system evaluation or occasional neural training",
-      features: ["Full facility access", "Quantum equipment usage", "Basic neural spotting", "Valid for 24 system hours"],
-      popular: false
-    },
-    {
-      id: 2,
-      name: "WEEKLY PROTOCOL",
-      price: "$75",
-      period: "per week",
-      description: "Optimal for short-term enhancement blocks",
-      features: ["7 cycles unlimited access", "All quantum hardware included", "Group neural class access", "Storage pod rental available"],
-      popular: false
-    },
-    {
-      id: 3,
-      name: "NEURAL UNLIMITED",
-      price: "$120",
-      period: "per month",
-      description: "Our most advanced membership protocol",
-      features: ["24/7 facility neural access", "All quantum equipment included", "Free initial enhancement assessment", "Group neural classes included", "Guest neural pass (2 per cycle)"],
-      popular: true
-    },
-    {
-      id: 4,
-      name: "STUDENT NEURAL",
-      price: "$90",
-      period: "per month",
-      description: "Special enhancement rate for full-time students",
-      features: ["24/7 facility neural access", "All quantum equipment included", "Student neural ID required", "Group neural classes included"],
-      popular: false
-    }
-  ],
+  // Pricing Plans
+  pricing: {
+    dayPasses: [
+      { type: "Day Pass", price: "2,000 Ft", note: "Single entry" },
+      { type: "Student Day Pass", price: "1,500 Ft", note: "Valid with student ID, up to age 23, single entry" },
+      { type: "Master Day Pass", price: "1,500 Ft", note: "For ages 60+, single entry" }
+    ],
+    memberships: [
+      { type: "10-Session Pass", price: "15,000 Ft", validity: "60 days", note: "One entry per day, includes 1 leaderboard attempt", popular: false },
+      { type: "Monthly Pass", price: "15,000 Ft", validity: "30 days", note: "One entry per day, includes 1 leaderboard attempt", popular: true },
+      { type: "Student Monthly Pass", price: "12,000 Ft", validity: "30 days", note: "Valid with student ID, up to age 23, includes 1 leaderboard attempt", popular: false },
+      { type: "Master Monthly Pass", price: "12,000 Ft", validity: "30 days", note: "For ages 60+, includes 1 leaderboard attempt", popular: false },
+      { type: "6-Month Pass", price: "63,000 Ft", validity: "6 months", note: "Includes 1 leaderboard attempt per month", popular: false },
+      { type: "Annual Pass", price: "126,000 Ft", validity: "12 months", note: "Includes 1 leaderboard attempt per month", popular: false },
+      { type: "Leaderboard Entry", price: "5,000 Ft / attempt", validity: "–", note: "For multiple leaderboard attempts per month", popular: false }
+    ],
+    paymentMethods: ["Cash", "Bank card (POS terminal)", "Revolut / Bank transfer"],
+    rules: [
+      "Memberships are personal and non-transferable.",
+      "Lost passes cannot be replaced.",
+      "In case of illness, validity can be extended upon request.",
+      "Prices include VAT.",
+      "Invoices are provided in all cases."
+    ]
+  },
 
   // Class Schedule
   schedule: [
