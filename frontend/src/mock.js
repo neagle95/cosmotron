@@ -104,65 +104,6 @@ export const mockData = {
     ]
   },
 
-  // Class Schedule
-  schedule: [
-    {
-      day: "Monday",
-      classes: [
-        { time: "6:00 AM", name: "Morning Enhancement", coach: "Marcus Steel", spots: "8/12" },
-        { time: "12:00 PM", name: "Lunch Neural Hour", coach: "Sarah Thunder", spots: "5/10" },
-        { time: "6:00 PM", name: "Elite Protocol Training", coach: "Marcus Steel", spots: "12/15" }
-      ]
-    },
-    {
-      day: "Tuesday",
-      classes: [
-        { time: "7:00 AM", name: "Initiate Fundamentals", coach: "Sarah Thunder", spots: "6/8" },
-        { time: "5:30 PM", name: "Technique Matrix", coach: "Jake Ironside", spots: "4/8" },
-        { time: "7:00 PM", name: "Open Neural Training", coach: "All Neural Engineers", spots: "Available" }
-      ]
-    },
-    {
-      day: "Wednesday",
-      classes: [
-        { time: "6:00 AM", name: "Morning Enhancement", coach: "Jake Ironside", spots: "10/12" },
-        { time: "12:00 PM", name: "Lunch Neural Hour", coach: "Sarah Thunder", spots: "7/10" },
-        { time: "6:00 PM", name: "Heavy Neural Singles", coach: "Marcus Steel", spots: "9/12" }
-      ]
-    },
-    {
-      day: "Thursday",
-      classes: [
-        { time: "7:00 AM", name: "Initiate Fundamentals", coach: "Sarah Thunder", spots: "3/8" },
-        { time: "5:30 PM", name: "Auxiliary Neural Focus", coach: "Jake Ironside", spots: "6/10" },
-        { time: "7:00 PM", name: "Open Neural Training", coach: "All Neural Engineers", spots: "Available" }
-      ]
-    },
-    {
-      day: "Friday",
-      classes: [
-        { time: "6:00 AM", name: "Morning Enhancement", coach: "Marcus Steel", spots: "11/12" },
-        { time: "12:00 PM", name: "Lunch Neural Hour", coach: "Jake Ironside", spots: "8/10" },
-        { time: "6:00 PM", name: "Friday Night Neural Lights", coach: "All Neural Engineers", spots: "15/20" }
-      ]
-    },
-    {
-      day: "Saturday",
-      classes: [
-        { time: "9:00 AM", name: "Weekend Neural Warriors", coach: "Sarah Thunder", spots: "12/15" },
-        { time: "11:00 AM", name: "Competition Neural Simulation", coach: "Marcus Steel", spots: "8/10" },
-        { time: "2:00 PM", name: "Open Neural Training", coach: "Available", spots: "Available" }
-      ]
-    },
-    {
-      day: "Sunday",
-      classes: [
-        { time: "10:00 AM", name: "Recovery Neural Session", coach: "Jake Ironside", spots: "6/12" },
-        { time: "1:00 PM", name: "Open Neural Training", coach: "Available", spots: "Available" }
-      ]
-    }
-  ],
-
   // Contact Information
   contact: {
     address: "Szeged, Hungary (Address will be provided later)",
