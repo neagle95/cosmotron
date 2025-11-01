@@ -95,24 +95,24 @@ const HeroSection = ({ data }) => {
           }} className="fade-in" style={{ animationDelay: '0.8s' }}>
             <button 
               className="btn-primary cyberpunk-border"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('pricing')}
               style={{
                 fontSize: '1.1rem',
                 padding: '1.2em 2.5em'
               }}
             >
-              INITIATE TRIAL
+              PRICING
             </button>
             
             <button 
               className="btn-secondary cyberpunk-border"
-              onClick={() => scrollToSection('membership')}
+              onClick={() => scrollToSection('leaderboard')}
               style={{
                 fontSize: '1.1rem',
                 padding: '1.2em 2.5em'
               }}
             >
-              ACCESS PROTOCOLS
+              LEADERBOARD
             </button>
           </div>
         </div>
