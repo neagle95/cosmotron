@@ -14,14 +14,14 @@ export const mockData = {
 
   // About Section
   about: {
-    title: "NEURAL ENHANCEMENT PROTOCOLS",
-    description: "Since 2018, Cosmotron has been Perth's nexus for advanced strength augmentation. We believe that every lifter - from neural newcomers to cybernetic champions - deserves access to cutting-edge training protocols, quantum-grade equipment, and a collective that transcends human limitations.",
-    philosophy: "Our philosophy: Data-driven precision, AI-enhanced intensity, digital community convergence. Whether you're initializing your first training sequence or optimizing for competitive parameters, we provide the neural pathways, technological infrastructure, and collective intelligence to unlock your maximum potential.",
+    title: "ABOUT US",
+    description: "Cosmotron is a powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place. Our goal is progress for everyone — that's why we welcome not only powerlifters but anyone who wants to become stronger, more conscious, or simply more active.",
+    philosophy: "At the heart of our community lie performance, technique, and unity – and to celebrate this, we've launched the Cosmotron Leaderboard, featuring the strongest lifters from our gym and the city of Szeged. Step in. Show your strength. Get on the list.",
     stats: [
-      { number: "500+", label: "Neural Links Active" },
-      { number: "50+", label: "Victory Protocols" },
-      { number: "6", label: "Years Online" },
-      { number: "24/7", label: "System Uptime" }
+      { number: "100+", label: "Active Members" },
+      { number: "Top 20", label: "Leaderboard Spots" },
+      { number: "3", label: "Years in Szeged" },
+      { number: "24/7", label: "Member Access" }
     ]
   },
 
