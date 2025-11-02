@@ -19,19 +19,19 @@ const EquipmentSection = ({ data }) => {
         {/* Section Header */}
         <div className="text-center mb-large">
           <h2 className="heading-1 fade-in neon-text-magenta" style={{ marginBottom: '30px' }}>
-            QUANTUM HARDWARE
+            EQUIPMENT
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
             margin: '0 auto',
             color: 'var(--text-secondary)'
           }}>
-            Train with competition-grade quantum equipment that exceeds interplanetary powerlifting standards.
+            Train with competition-grade equipment that exceeds international powerlifting standards.
           </p>
         </div>
 
         {/* Equipment Grid */}
-        <div className="grid-2" style={{ gap: '30px', marginBottom: '80px' }}>
+        <div className="grid-2" style={{ gap: '30px' }}>
           {data.map((equipment, index) => (
             <div 
               key={equipment.id}
@@ -154,115 +154,12 @@ const EquipmentSection = ({ data }) => {
                     fontFamily: 'Orbitron, Arial, sans-serif',
                     textAlign: 'center'
                   }}>
-                    ✓ QUANTUM GRADE ✓ NEURAL CERTIFIED ✓ ELITE SPEC
+                    ✓ COMPETITION GRADE ✓ IPF CERTIFIED ✓ ELITE SPEC
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Equipment Highlights */}
-        <div 
-          className="fade-in"
-          style={{
-            background: `linear-gradient(135deg, 
-              var(--secondary-purple)30, 
-              var(--bg-card))`,
-            padding: '60px 40px',
-            border: '2px solid var(--border-medium)',
-            textAlign: 'center',
-            position: 'relative',
-            overflow: 'hidden'
-          }}
-        >
-          {/* Animated background particles */}
-          <div style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 2px, transparent 2px),
-              radial-gradient(circle at 75% 75%, rgba(255, 0, 255, 0.1) 2px, transparent 2px)
-            `,
-            backgroundSize: '50px 50px',
-            animation: 'float 8s ease-in-out infinite',
-            opacity: 0.5
-          }} />
-
-          <h3 className="heading-2 neon-text-magenta" style={{ 
-            marginBottom: '30px',
-            fontFamily: 'Orbitron, Arial, sans-serif'
-          }}>
-            QUANTUM SUPERIORITY MATRIX
-          </h3>
-
-          <div className="grid-3" style={{ gap: '40px', position: 'relative', zIndex: 1 }}>
-            <div>
-              <div style={{
-                color: 'var(--neon-cyan)',
-                marginBottom: '20px',
-                display: 'flex',
-                justifyContent: 'center',
-                filter: 'drop-shadow(0 0 20px var(--neon-cyan))'
-              }}>
-                <Award size={40} />
-              </div>
-              <h4 className="heading-4 neon-text" style={{ 
-                marginBottom: '15px',
-                fontFamily: 'Orbitron, Arial, sans-serif'
-              }}>
-                NEURAL STANDARD
-              </h4>
-              <p className="body-small">
-                All quantum hardware meets IPF+ specifications with neural enhancement integration protocols.
-              </p>
-            </div>
-
-            <div>
-              <div style={{
-                color: 'var(--neon-cyan)',
-                marginBottom: '20px',
-                display: 'flex',
-                justifyContent: 'center',
-                filter: 'drop-shadow(0 0 20px var(--neon-cyan))'
-              }}>
-                <Shield size={40} />
-              </div>
-              <h4 className="heading-4 neon-text" style={{ 
-                marginBottom: '15px',
-                fontFamily: 'Orbitron, Arial, sans-serif'
-              }}>
-                QUANTUM FAILSAFE
-              </h4>
-              <p className="body-small">
-                Advanced safety matrices and predictive maintenance ensure optimal lifting confidence in zero-gravity conditions.
-              </p>
-            </div>
-
-            <div>
-              <div style={{
-                color: 'var(--neon-cyan)',
-                marginBottom: '20px',
-                display: 'flex',
-                justifyContent: 'center',
-                filter: 'drop-shadow(0 0 20px var(--neon-cyan))'
-              }}>
-                <Zap size={40} />
-              </div>
-              <h4 className="heading-4 neon-text" style={{ 
-                marginBottom: '15px',
-                fontFamily: 'Orbitron, Arial, sans-serif'
-              }}>
-                ENHANCEMENT EDGE
-              </h4>
-              <p className="body-small">
-                Precision-calibrated quantum plates and neural-balanced bars for consistent, data-driven training optimization.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
 
