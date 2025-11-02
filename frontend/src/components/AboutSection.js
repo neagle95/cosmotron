@@ -242,6 +242,12 @@ const AboutSection = ({ data }) => {
         .card:hover .card-bg-effect {
           opacity: 1 !important;
         }
+
+        @media (max-width: 768px) {
+          .grid-2 {
+            grid-template-columns: 1fr !important;
+          }
+        }
       `}</style>
     </section>
   );
