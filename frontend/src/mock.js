@@ -114,7 +114,7 @@ export const mockData = {
     socialMedia: {
       instagram: "@cosmotron_szeged",
       facebook: "CosmotronSzeged",
-      youtube: "CosmotronGym"
+      tiktok: "@cosmotrongym"
     }
   }
 };
