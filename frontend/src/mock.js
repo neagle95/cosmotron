@@ -84,7 +84,7 @@ export const mockData = {
     ],
     memberships: [
       { type: "10-Session Pass", price: "15,000 Ft", validity: "60 days", note: "One entry per day, includes 1 leaderboard attempt", popular: false },
-      { type: "Monthly Pass", price: "15,000 Ft", validity: "30 days", note: "One entry per day, includes 1 leaderboard attempt", popular: true },
+      { type: "Monthly Pass", price: "15,000 Ft", validity: "30 days", note: "One entry per day, includes 1 leaderboard attempt", popular: false },
       { type: "Student Monthly Pass", price: "12,000 Ft", validity: "30 days", note: "Valid with student ID, up to age 23, includes 1 leaderboard attempt", popular: false },
       { type: "Master Monthly Pass", price: "12,000 Ft", validity: "30 days", note: "For ages 60+, includes 1 leaderboard attempt", popular: false },
       { type: "6-Month Pass", price: "63,000 Ft", validity: "6 months", note: "Includes 1 leaderboard attempt per month", popular: false },
