@@ -59,9 +59,12 @@ const AboutSection = ({ data }) => {
             </p>
           </div>
 
-          {/* Right Column - Stats */}
+          {/* Right Column - Single Stat Card */}
           <div className="fade-in" style={{ animationDelay: '0.4s' }}>
-            <div className="grid-2" style={{ gap: '30px' }}>
+            <div style={{ 
+              display: 'flex', 
+              justifyContent: 'center'
+            }}>
               {data.stats.map((stat, index) => (
                 <div 
                   key={index}
@@ -70,15 +73,27 @@ const AboutSection = ({ data }) => {
                     background: 'var(--bg-card)',
                     padding: '40px 30px',
                     textAlign: 'center',
-                    cursor: 'pointer',
+                    cursor: stat.clickable ? 'pointer' : 'default',
                     position: 'relative',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
+                    maxWidth: '300px',
+                    width: '100%',
+                    transition: 'all 0.3s ease'
                   }}
+                  onClick={() => stat.clickable && scrollToSection(stat.navigateTo)}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-5px) scale(1.02)';
+                    if (stat.clickable) {
+                      e.currentTarget.style.transform = 'translateY(-8px) scale(1.05)';
+                      e.currentTarget.style.borderColor = 'var(--neon-cyan)';
+                      e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 255, 255, 0.4)';
+                    }
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    if (stat.clickable) {
+                      e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                      e.currentTarget.style.borderColor = 'var(--border-medium)';
+                      e.currentTarget.style.boxShadow = 'none';
+                    }
                   }}
                 >
                   {/* Animated background effect */}
@@ -106,7 +121,7 @@ const AboutSection = ({ data }) => {
                     position: 'relative',
                     zIndex: 1
                   }}>
-                    {iconMap[stat.label] || <Target size={32} />}
+                    {iconMap[stat.label] || <Award size={32} />}
                   </div>
                   
                   <div className="heading-2 neon-text" style={{ 
@@ -128,6 +143,23 @@ const AboutSection = ({ data }) => {
                   }}>
                     {stat.label}
                   </div>
+
+                  {/* Click indicator for clickable cards */}
+                  {stat.clickable && (
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '10px',
+                      right: '15px',
+                      color: 'var(--neon-cyan)',
+                      fontSize: '0.7rem',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.1em',
+                      fontFamily: 'Orbitron, Arial, sans-serif',
+                      opacity: 0.7
+                    }}>
+                      CLICK TO VIEW
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
