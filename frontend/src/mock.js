@@ -15,10 +15,7 @@ export const mockData = {
     description: "Cosmotron is a powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place. Our goal is progress for everyone — that's why we welcome not only powerlifters but anyone who wants to become stronger, more conscious, or simply more active.",
     philosophy: "At the heart of our community lie performance, technique, and unity – and to celebrate this, we've launched the Cosmotron Leaderboard, featuring the strongest lifters from our gym and the city of Szeged. Step in. Show your strength. Get on the list.",
     stats: [
-      { number: "100+", label: "Active Members" },
-      { number: "Top 20", label: "Leaderboard Spots" },
-      { number: "3", label: "Years in Szeged" },
-      { number: "24/7", label: "Member Access" }
+      { number: "Top 10", label: "Leaderboard Spots", clickable: true, navigateTo: "leaderboard" }
     ]
   },
 
