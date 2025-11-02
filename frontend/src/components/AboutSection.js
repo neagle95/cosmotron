@@ -2,6 +2,13 @@ import React from 'react';
 import { Target, Users, Award, Clock, Cpu, Zap, Shield, Database } from 'lucide-react';
 
 const AboutSection = ({ data }) => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const iconMap = {
     'Neural Links Active': <Users size={32} />,
     'Victory Protocols': <Award size={32} />,
