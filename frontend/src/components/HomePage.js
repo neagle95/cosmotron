@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { mockData, mockAPI } from '../mock';
+import { useLanguage } from '../context/LanguageContext';
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
 import LeaderboardSection from './LeaderboardSection';
@@ -11,8 +12,10 @@ import Header from './Header';
 import Footer from './Footer';
 
 const HomePage = () => {
-  const [data, setData] = useState(mockData);
   const [loading, setLoading] = useState(true);
+  const { currentLanguage } = useLanguage();
+
+  const data = mockData[currentLanguage];
 
   useEffect(() => {
     // Simulate loading data
@@ -31,7 +34,7 @@ const HomePage = () => {
         background: 'var(--bg-page)'
       }}>
         <div className="brand-display" style={{ opacity: 0.7 }}>
-          LOADING...
+          {currentLanguage === 'en' ? 'LOADING...' : 'BETÖLTÉS...'}
         </div>
       </div>
     );
@@ -42,12 +45,12 @@ const HomePage = () => {
       <Header />
       <HeroSection data={data.hero} />
       <AboutSection data={data.about} />
-      <LeaderboardSection data={data.leaderboard} />
-      <BookingSection />
-      <EquipmentSection data={data.equipment} />
-      <PricingSection data={data.pricing} />
-      <ContactSection data={data.contact} />
-      <Footer data={data.contact} />
+      <LeaderboardSection data={data.leaderboard} leaderboardData={mockData.leaderboard} />
+      <BookingSection data={data.booking} />
+      <EquipmentSection data={mockData.equipment} language={currentLanguage} />
+      <PricingSection data={mockData.pricing} language={currentLanguage} pricingData={data.pricing} />
+      <ContactSection data={data.contact} contactData={mockData.contact} />
+      <Footer data={data.footer} contactData={mockData.contact} />
     </div>
   );
 };
