@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Instagram, Facebook, Youtube, Dumbbell } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook, Music, Dumbbell } from 'lucide-react';
 
 const Footer = ({ data }) => {
   const scrollToSection = (sectionId) => {
@@ -13,19 +13,17 @@ const Footer = ({ data }) => {
     switch (platform.toLowerCase()) {
       case 'instagram': return <Instagram size={20} />;
       case 'facebook': return <Facebook size={20} />;
-      case 'youtube': return <Youtube size={20} />;
+      case 'tiktok': return <Music size={20} />;
       default: return <Mail size={20} />;
     }
   };
 
   const quickLinks = [
-    { label: 'Home', id: 'hero' },
-    { label: 'About', id: 'about' },
-    { label: 'Programs', id: 'programs' },
+    { label: 'About Us', id: 'about' },
+    { label: 'Leaderboard', id: 'leaderboard' },
+    { label: 'Booking', id: 'booking' },
     { label: 'Equipment', id: 'equipment' },
-    { label: 'Trainers', id: 'trainers' },
-    { label: 'Membership', id: 'membership' },
-    { label: 'Schedule', id: 'schedule' },
+    { label: 'Pricing', id: 'pricing' },
     { label: 'Contact', id: 'contact' }
   ];
 
