@@ -1,25 +1,239 @@
 // Mock data for Cosmotron Powerlifting Gym
 
 export const mockData = {
-  // Hero Section
-  hero: {
-    title: "COSMOTRON",
-    slogan: "POWER BEYOND GRAVITY",
-    subtitle: "A powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place in Szeged.",
-    backgroundImage: "https://customer-assets.emergentagent.com/job_cosmotron-lift/artifacts/y7cv6qi4_file_0000000015586230bbc3a706feb53869_conversation_id%3D67ffb4f5-5e74-8012-b17e-3fbcd28753a7%26message_id%3D829414af-438b-439d-ab88-a793497798f3.png"
+  en: {
+    // Hero Section
+    hero: {
+      title: "COSMOTRON",
+      slogan: "POWER BEYOND GRAVITY",
+      subtitle: "A powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place in Szeged.",
+      backgroundImage: "https://customer-assets.emergentagent.com/job_cosmotron-lift/artifacts/y7cv6qi4_file_0000000015586230bbc3a706feb53869_conversation_id%3D67ffb4f5-5e74-8012-b17e-3fbcd28753a7%26message_id%3D829414af-438b-439d-ab88-a793497798f3.png",
+      buttons: {
+        pricing: "PRICING",
+        leaderboard: "LEADERBOARD"
+      }
+    },
+
+    // About Section
+    about: {
+      title: "ABOUT US",
+      description: "Cosmotron is a powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place. Our goal is progress for everyone — that's why we welcome not only powerlifters but anyone who wants to become stronger, more conscious, or simply more active.",
+      philosophy: "At the heart of our community lie performance, technique, and unity – and to celebrate this, we've launched the Cosmotron Leaderboard, featuring the strongest lifters from our gym and the city of Szeged. Step in. Show your strength. Get on the list.",
+      stats: [
+        { number: "Top 10", label: "Leaderboard Spots", clickable: true, navigateTo: "leaderboard" }
+      ]
+    },
+
+    // Navigation
+    navigation: {
+      aboutUs: "About Us",
+      leaderboard: "Leaderboard", 
+      booking: "Booking",
+      equipment: "Equipment",
+      pricing: "Pricing",
+      contact: "Contact"
+    },
+
+    // Leaderboard Section
+    leaderboard: {
+      title: "LEADERBOARD",
+      subtitle: "Featuring the strongest lifters from our gym and the city of Szeged.",
+      topMen: "TOP 10 MEN",
+      topWomen: "TOP 10 WOMEN",
+      headers: {
+        rank: "RANK",
+        photo: "PHOTO", 
+        name: "NAME",
+        squat: "SQUAT",
+        bench: "BENCH",
+        deadlift: "DEADLIFT",
+        total: "TOTAL",
+        dots: "DOTS"
+      },
+      howToGetOn: "HOW CAN I GET ON THE LIST?"
+    },
+
+    // Booking Section
+    booking: {
+      title: "BOOKING",
+      subtitle: "Reserve your training time and secure your spot at Cosmotron.",
+      systemTitle: "BOOKING SYSTEM",
+      description: "Our advanced booking system will be available here soon. Reserve your training sessions and manage your schedule with ease.",
+      features: {
+        timeSlots: "Time Slots",
+        timeSlotsDesc: "Reserve specific training times",
+        capacity: "Capacity Management", 
+        capacityDesc: "Ensure optimal training space",
+        cancellation: "Easy Cancellation",
+        cancellationDesc: "Flexible booking modifications"
+      },
+      comingSoon: "COMING SOON",
+      comingSoonDesc: "The booking system will be developed and integrated here shortly."
+    },
+
+    // Equipment Section
+    equipment: {
+      title: "EQUIPMENT",
+      subtitle: "Train with competition-grade equipment that exceeds international powerlifting standards.",
+      specs: "✓ COMPETITION GRADE ✓ IPF CERTIFIED ✓ ELITE SPEC"
+    },
+
+    // Pricing Section
+    pricing: {
+      title: "PRICING",
+      subtitle: "Choose the membership that fits your training goals and budget.",
+      dayPasses: "DAY PASSES",
+      memberships: "MEMBERSHIPS", 
+      paymentMethods: "PAYMENT METHODS",
+      membershipRules: "MEMBERSHIP USAGE RULES",
+      importantNotes: "IMPORTANT NOTES",
+      vatNote: "Prices include VAT • Invoices are provided in all cases"
+    },
+
+    // Contact Section
+    contact: {
+      title: "GET IN TOUCH",
+      subtitle: "Ready to start your strength journey? Visit us, call us, or send us a message.",
+      visitUs: "VISIT COSMOTRON",
+      sendMessage: "SEND US A MESSAGE",
+      address: "Address",
+      phone: "Phone", 
+      email: "Email",
+      openingHours: "Opening Hours",
+      followUs: "Follow Us",
+      findUs: "Find Us Here",
+      mapNote: "Interactive map will be integrated here"
+    },
+
+    // Footer
+    footer: {
+      slogan: "Power Beyond Gravity",
+      quickLinks: "Quick Links",
+      contactInfo: "Contact Info",
+      openingHours: "Opening Hours",
+      copyright: "Cosmotron Powerlifting Gym. All rights reserved.",
+      privacyPolicy: "Privacy Policy",
+      termsConditions: "Terms & Conditions"
+    }
+  },
+  
+  hu: {
+    // Hero Section
+    hero: {
+      title: "COSMOTRON",
+      slogan: "ERŐ A GRAVITÁCIÓN TÚL",
+      subtitle: "Egy erőemelésre szakosodott edzőterem, ahol kezdők, visszatérő sportolók és profi versenyzők egyaránt megtalálhatják a helyüket Szegeden.",
+      backgroundImage: "https://customer-assets.emergentagent.com/job_cosmotron-lift/artifacts/y7cv6qi4_file_0000000015586230bbc3a706feb53869_conversation_id%3D67ffb4f5-5e74-8012-b17e-3fbcd28753a7%26message_id%3D829414af-438b-439d-ab88-a793497798f3.png",
+      buttons: {
+        pricing: "ÁRAK",
+        leaderboard: "RANGLISTA"
+      }
+    },
+
+    // About Section
+    about: {
+      title: "RÓLUNK",
+      description: "A Cosmotron egy erőemelésre szakosodott edzőterem, ahol kezdők, visszatérő sportolók és profi versenyzők egyaránt megtalálhatják a helyüket. Célunk mindenki fejlődése – ezért nemcsak erőemelőket, hanem mindenkit szívesen látunk, aki erősebbé, tudatosabbá vagy egyszerűen aktívabbá szeretne válni.",
+      philosophy: "Közösségünk középpontjában a teljesítmény, a technika és az egység áll – ennek ünneplésére indítottuk el a Cosmotron Ranglistát, amely edzőtermünk és Szeged város legerősebb emelőit mutatja be. Lépj be. Mutasd meg az erődet. Kerülj fel a listára.",
+      stats: [
+        { number: "Top 10", label: "Ranglista Helyezés", clickable: true, navigateTo: "leaderboard" }
+      ]
+    },
+
+    // Navigation
+    navigation: {
+      aboutUs: "Rólunk",
+      leaderboard: "Ranglista",
+      booking: "Foglalás", 
+      equipment: "Felszerelés",
+      pricing: "Árak",
+      contact: "Kapcsolat"
+    },
+
+    // Leaderboard Section
+    leaderboard: {
+      title: "RANGLISTA",
+      subtitle: "Edzőtermünk és Szeged város legerősebb emelői.",
+      topMen: "TOP 10 FÉRFI",
+      topWomen: "TOP 10 NŐ",
+      headers: {
+        rank: "HELYEZÉS",
+        photo: "FOTÓ",
+        name: "NÉV", 
+        squat: "GUGGOLÁS",
+        bench: "FEKVE NYOMÁS",
+        deadlift: "FELHÚZÁS",
+        total: "ÖSSZESEN",
+        dots: "DOTS"
+      },
+      howToGetOn: "HOGYAN KERÜLHETEK FEL A LISTÁRA?"
+    },
+
+    // Booking Section  
+    booking: {
+      title: "FOGLALÁS",
+      subtitle: "Foglald le az edzési idődet és biztosítsd a helyed a Cosmotronban.",
+      systemTitle: "FOGLALÁSI RENDSZER",
+      description: "Fejlett foglalási rendszerünk hamarosan elérhető lesz itt. Foglald le edzési időpontjaidat és kezeld egyszerűen a programodat.",
+      features: {
+        timeSlots: "Időpontok",
+        timeSlotsDesc: "Konkrét edzési idők lefoglalása",
+        capacity: "Kapacitás Kezelés",
+        capacityDesc: "Optimális edzési tér biztosítása", 
+        cancellation: "Egyszerű Lemondás",
+        cancellationDesc: "Rugalmas foglalás módosítások"
+      },
+      comingSoon: "HAMAROSAN",
+      comingSoonDesc: "A foglalási rendszer hamarosan fejlesztésre és integrálásra kerül."
+    },
+
+    // Equipment Section
+    equipment: {
+      title: "FELSZERELÉS", 
+      subtitle: "Edzz versenyminőségű felszerelésekkel, amelyek meghaladják a nemzetközi erőemelési szabványokat.",
+      specs: "✓ VERSENY MINŐSÉG ✓ IPF MINŐSÍTETT ✓ ELIT SPECIFIKÁCIÓ"
+    },
+
+    // Pricing Section
+    pricing: {
+      title: "ÁRAK",
+      subtitle: "Válaszd ki az edzési céljaidhoz és költségvetésedhez passzoló tagságot.",
+      dayPasses: "NAPI BÉRLETEK",
+      memberships: "TAGSÁGOK",
+      paymentMethods: "FIZETÉSI MÓDOK",
+      membershipRules: "TAGSÁG HASZNÁLATI SZABÁLYOK", 
+      importantNotes: "FONTOS MEGJEGYZÉSEK",
+      vatNote: "Az árak tartalmazzák az ÁFÁ-t • Minden esetben számlát biztosítunk"
+    },
+
+    // Contact Section
+    contact: {
+      title: "KAPCSOLAT",
+      subtitle: "Készen állsz az erőnlét utazás kezdésére? Látogass meg, hívj fel, vagy küldj üzenetet.",
+      visitUs: "LÁTOGASS EL HOZZÁNK",
+      sendMessage: "KÜLDJ ÜZENETET",
+      address: "Cím",
+      phone: "Telefon",
+      email: "Email", 
+      openingHours: "Nyitvatartás",
+      followUs: "Kövess Minket",
+      findUs: "Itt Találsz Minket",
+      mapNote: "Interaktív térkép hamarosan integrálásra kerül"
+    },
+
+    // Footer
+    footer: {
+      slogan: "Erő a Gravitáción Túl", 
+      quickLinks: "Gyors Linkek",
+      contactInfo: "Kapcsolat",
+      openingHours: "Nyitvatartás",
+      copyright: "Cosmotron Erőemelő Edzőterem. Minden jog fenntartva.",
+      privacyPolicy: "Adatvédelmi Szabályzat",
+      termsConditions: "Általános Szerződési Feltételek"
+    }
   },
 
-  // About Section
-  about: {
-    title: "ABOUT US",
-    description: "Cosmotron is a powerlifting-focused gym where beginners, returning athletes, and professionals alike can find their place. Our goal is progress for everyone — that's why we welcome not only powerlifters but anyone who wants to become stronger, more conscious, or simply more active.",
-    philosophy: "At the heart of our community lie performance, technique, and unity – and to celebrate this, we've launched the Cosmotron Leaderboard, featuring the strongest lifters from our gym and the city of Szeged. Step in. Show your strength. Get on the list.",
-    stats: [
-      { number: "Top 10", label: "Leaderboard Spots", clickable: true, navigateTo: "leaderboard" }
-    ]
-  },
-
-  // Leaderboard Data
+  // Leaderboard Data (same for both languages)
   leaderboard: {
     men: [
       { rank: 1, name: "Kovács János", photo: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3", squat: 250, bench: 180, deadlift: 280, total: 710, dots: 485.2 },
