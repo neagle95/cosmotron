@@ -165,8 +165,8 @@ const LeaderboardSection = ({ data }) => {
                   justifyContent: 'center'
                 }}>
                   <div style={{
-                    width: '50px',
-                    height: '50px',
+                    width: '70px',
+                    height: '70px',
                     borderRadius: '50%',
                     backgroundImage: `url(${athlete.photo})`,
                     backgroundSize: 'cover',
