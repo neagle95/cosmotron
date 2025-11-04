@@ -74,7 +74,7 @@ const Footer = ({ data }) => {
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
                 }}>
-                  Where Strength Is Born
+                  Power Beyond Gravity
                 </p>
               </div>
             </div>
