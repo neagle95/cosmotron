@@ -235,6 +235,8 @@ export const mockData = {
 
   // Leaderboard Data (same for both languages)
   leaderboard: {
+  // Leaderboard Data (same for both languages)
+  leaderboard: {
     men: [
       { rank: 1, name: "Kovács János", photo: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3", squat: 250, bench: 180, deadlift: 280, total: 710, dots: 485.2 },
       { rank: 2, name: "Nagy Péter", photo: "https://images.unsplash.com/photo-1583468982228-19f19164aee2?ixlib=rb-4.0.3", squat: 240, bench: 175, deadlift: 275, total: 690, dots: 472.1 },
@@ -261,69 +263,91 @@ export const mockData = {
     ]
   },
 
-  // Equipment Showcase
+  // Equipment Showcase (same for both languages)
   equipment: [
     {
       id: 1,
       name: "CALIBRATED PLATES",
+      nameHu: "KALIBRÁLT TÁRCSÁK",
       description: "Competition-grade calibrated plates meeting IPF standards for precise weight measurements.",
+      descriptionHu: "Versenyminőségű kalibrált tárcsák, amelyek megfelelnek az IPF szabványoknak a precíz súlyméréshez.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     },
     {
       id: 2,
       name: "COMPETITION BARBELLS",
+      nameHu: "VERSENY RÚDAK",
       description: "IPF-approved competition barbells for squat, bench press, and deadlift with proper specifications.",
+      descriptionHu: "IPF által jóváhagyott verseny rúdak guggoláshoz, fekve nyomáshoz és felhúzáshoz megfelelő specifikációkkal.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
       id: 3,
       name: "COMBO RACKS",
+      nameHu: "KOMBINÁLT ÁLLVÁNYOK",
       description: "Versatile combo racks for safe squatting and bench pressing with adjustable safety settings.",
+      descriptionHu: "Sokoldalú kombinált állványok biztonságos guggoláshoz és fekve nyomáshoz állítható biztonsági beállításokkal.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
       id: 4,
       name: "MACHINES & ACCESSORIES",
+      nameHu: "GÉPEK ÉS KIEGÉSZÍTŐK",
       description: "Supporting machines and accessories for auxiliary work and comprehensive strength training.",
+      descriptionHu: "Kiegészítő gépek és tartozékok segéd munkához és átfogó erőfejlesztő edzéshez.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     }
   ],
 
-  // Pricing Plans
+  // Pricing Plans (same for both languages) 
   pricing: {
     dayPasses: [
-      { type: "Day Pass", price: "2,000 Ft", note: "Single entry" },
-      { type: "Student Day Pass", price: "1,500 Ft", note: "Valid with student ID, up to age 23, single entry" },
-      { type: "Master Day Pass", price: "1,500 Ft", note: "For ages 60+, single entry" }
+      { type: "Day Pass", typeHu: "Napi Bérlet", price: "2,000 Ft", note: "Single entry", noteHu: "Egyszeri belépés" },
+      { type: "Student Day Pass", typeHu: "Diák Napi Bérlet", price: "1,500 Ft", note: "Valid with student ID, up to age 23, single entry", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, egyszeri belépés" },
+      { type: "Master Day Pass", typeHu: "Master Napi Bérlet", price: "1,500 Ft", note: "For ages 60+, single entry", noteHu: "60 év felettieknek, egyszeri belépés" }
     ],
     memberships: [
-      { type: "10-Session Pass", price: "15,000 Ft", validity: "60 days", note: "One entry per day, includes 1 leaderboard attempt", popular: false },
-      { type: "Monthly Pass", price: "15,000 Ft", validity: "30 days", note: "One entry per day, includes 1 leaderboard attempt", popular: false },
-      { type: "Student Monthly Pass", price: "12,000 Ft", validity: "30 days", note: "Valid with student ID, up to age 23, includes 1 leaderboard attempt", popular: false },
-      { type: "Master Monthly Pass", price: "12,000 Ft", validity: "30 days", note: "For ages 60+, includes 1 leaderboard attempt", popular: false },
-      { type: "6-Month Pass", price: "63,000 Ft", validity: "6 months", note: "Includes 1 leaderboard attempt per month", popular: false },
-      { type: "Annual Pass", price: "126,000 Ft", validity: "12 months", note: "Includes 1 leaderboard attempt per month", popular: false },
-      { type: "Leaderboard Entry", price: "5,000 Ft / attempt", validity: "–", note: "For multiple leaderboard attempts per month", popular: false }
+      { type: "10-Session Pass", typeHu: "10 Alkalmas Bérlet", price: "15,000 Ft", validity: "60 days", validityHu: "60 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmazza 1 ranglista kísérletet", popular: false },
+      { type: "Monthly Pass", typeHu: "Havi Bérlet", price: "15,000 Ft", validity: "30 days", validityHu: "30 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmazza 1 ranglista kísérletet", popular: false },
+      { type: "Student Monthly Pass", typeHu: "Diák Havi Bérlet", price: "12,000 Ft", validity: "30 days", validityHu: "30 nap", note: "Valid with student ID, up to age 23, includes 1 leaderboard attempt", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, tartalmazza 1 ranglista kísérletet", popular: false },
+      { type: "Master Monthly Pass", typeHu: "Master Havi Bérlet", price: "12,000 Ft", validity: "30 days", validityHu: "30 nap", note: "For ages 60+, includes 1 leaderboard attempt", noteHu: "60 év felettieknek, tartalmazza 1 ranglista kísérletet", popular: false },
+      { type: "6-Month Pass", typeHu: "6 Hónapos Bérlet", price: "63,000 Ft", validity: "6 months", validityHu: "6 hónap", note: "Includes 1 leaderboard attempt per month", noteHu: "Havonta 1 ranglista kísérletet tartalmaz", popular: false },
+      { type: "Annual Pass", typeHu: "Éves Bérlet", price: "126,000 Ft", validity: "12 months", validityHu: "12 hónap", note: "Includes 1 leaderboard attempt per month", noteHu: "Havonta 1 ranglista kísérletet tartalmaz", popular: false },
+      { type: "Leaderboard Entry", typeHu: "Ranglista Belépés", price: "5,000 Ft / attempt", validity: "–", validityHu: "–", note: "For multiple leaderboard attempts per month", noteHu: "Több havi ranglista kísérlethez", popular: false }
     ],
     paymentMethods: ["Cash", "Bank card (POS terminal)", "Revolut / Bank transfer"],
+    paymentMethodsHu: ["Készpénz", "Bankkártya (POS terminál)", "Revolut / Banki átutalás"],
     rules: [
       "Memberships are personal and non-transferable.",
       "Lost passes cannot be replaced.",
       "In case of illness, validity can be extended upon request.",
       "Prices include VAT.",
       "Invoices are provided in all cases."
+    ],
+    rulesHu: [
+      "A tagságok személyesek és át nem ruházhatók.",
+      "Az elveszett bérleteket nem lehet pótolni.",
+      "Betegség esetén kérésre a érvényesség meghosszabbítható.",
+      "Az árak tartalmazzák az ÁFÁ-t.",
+      "Minden esetben számlát biztosítunk."
     ]
   },
 
   // Contact Information
   contact: {
     address: "Szeged, Hungary (Address will be provided later)",
+    addressHu: "Szeged, Magyarország (Cím később kerül megadásra)",
     phone: "(Phone number will be provided later)",
+    phoneHu: "(Telefonszám később kerül megadásra)",
     email: "(Email will be provided later)",
+    emailHu: "(Email később kerül megadásra)",
     hours: {
       weekdays: "Mon - Sat: 6:00 - 22:00",
+      weekdaysHu: "Hét - Szo: 6:00 - 22:00",
       saturday: "Mon - Sat: 6:00 - 22:00", 
-      sunday: "Sunday: 8:00 - 14:00"
+      saturdayHu: "Hét - Szo: 6:00 - 22:00",
+      sunday: "Sunday: 8:00 - 14:00",
+      sundayHu: "Vasárnap: 8:00 - 14:00"
     },
     socialMedia: {
       instagram: "@cosmotron_szeged",
