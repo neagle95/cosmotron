@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { mockData } from '../mock';
+import LanguageToggle from './LanguageToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { currentLanguage } = useLanguage();
+
+  const data = mockData[currentLanguage];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,12 +29,12 @@ const Header = () => {
   };
 
   const navigationItems = [
-    { label: 'About Us', id: 'about' },
-    { label: 'Leaderboard', id: 'leaderboard' },
-    { label: 'Booking', id: 'booking' },
-    { label: 'Equipment', id: 'equipment' },
-    { label: 'Pricing', id: 'pricing' },
-    { label: 'Contact', id: 'contact' }
+    { label: data.navigation.aboutUs, id: 'about' },
+    { label: data.navigation.leaderboard, id: 'leaderboard' },
+    { label: data.navigation.booking, id: 'booking' },
+    { label: data.navigation.equipment, id: 'equipment' },
+    { label: data.navigation.pricing, id: 'pricing' },
+    { label: data.navigation.contact, id: 'contact' }
   ];
 
   return (
@@ -99,37 +105,48 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+            
+            {/* Language Toggle */}
+            <div style={{ marginLeft: '20px' }}>
+              <LanguageToggle />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            style={{
-              display: 'none',
-              background: 'none',
-              border: '2px solid var(--neon-cyan)',
-              color: 'var(--neon-cyan)',
-              fontSize: '1.5rem',
-              cursor: 'pointer',
-              padding: '8px',
-              borderRadius: '0',
-              boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)',
-              transition: 'all 0.3s ease'
-            }}
-            className="mobile-menu-button"
-            onMouseEnter={(e) => {
-              e.target.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.6)';
-              e.target.style.color = 'var(--text-inverse)';
-              e.target.style.backgroundColor = 'var(--neon-cyan)';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.boxShadow = '0 0 10px rgba(0, 255, 255, 0.3)';
-              e.target.style.color = 'var(--neon-cyan)';
-              e.target.style.backgroundColor = 'transparent';
-            }}
-          >
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          <div style={{ 
+            display: 'none',
+            alignItems: 'center',
+            gap: '15px'
+          }} className="mobile-controls">
+            <LanguageToggle />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              style={{
+                background: 'none',
+                border: '2px solid var(--neon-cyan)',
+                color: 'var(--neon-cyan)',
+                fontSize: '1.5rem',
+                cursor: 'pointer',
+                padding: '8px',
+                borderRadius: '0',
+                boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+              className="mobile-menu-button"
+              onMouseEnter={(e) => {
+                e.target.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.6)';
+                e.target.style.color = 'var(--text-inverse)';
+                e.target.style.backgroundColor = 'var(--neon-cyan)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.boxShadow = '0 0 10px rgba(0, 255, 255, 0.3)';
+                e.target.style.color = 'var(--neon-cyan)';
+                e.target.style.backgroundColor = 'transparent';
+              }}
+            >
+              {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </nav>
 
         {/* Mobile Navigation */}
@@ -184,13 +201,16 @@ const Header = () => {
           .desktop-nav {
             display: none !important;
           }
-          .mobile-menu-button {
-            display: block !important;
+          .mobile-controls {
+            display: flex !important;
           }
         }
         
         @media (min-width: 769px) {
           .mobile-nav {
+            display: none !important;
+          }
+          .mobile-controls {
             display: none !important;
           }
         }
