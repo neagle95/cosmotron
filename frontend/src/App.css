@@ -1,548 +1,548 @@
-/* Cosmotron Powerlifting Gym - Cyberpunk Design System */
+/* Import Google Fonts for Cyberpunk Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-/* Import Google Fonts - Cyberpunk style */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-:root {
-  /* Cyberpunk Color System */
-  --bg-page: #0a0a0f;
-  --bg-card: #1a1a2e;
-  --bg-light: #16213e;
-  
-  --text-primary: #00ffff;
-  --text-secondary: #b19cd9;
-  --text-muted: #6a5acd;
-  --text-inverse: #0a0a0f;
-  
-  --border-light: rgba(138, 43, 226, 0.3);
-  --border-medium: #8a2be2;
-  --border-strong: #9966cc;
-  
-  --brand-primary: #ff00ff;
-  --brand-hover: rgba(255, 0, 255, 0.8);
-  --brand-active: rgba(255, 0, 255, 0.6);
-  
-  --secondary-purple: #6a0dad;
-  --secondary-blue: #00bfff;
-  --secondary-pink: #ff1493;
-  --neutral-white: #ffffff;
-  --neutral-light: #e6e6fa;
-  
-  /* Cyberpunk Neon Effects */
-  --neon-cyan: #00ffff;
-  --neon-magenta: #ff00ff;
-  --neon-purple: #8a2be2;
-  --neon-blue: #0080ff;
-}
-
-/* Global Reset and Base Styles */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Rajdhani', 'Orbitron', Arial, sans-serif;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rajdhani', sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
   line-height: 1.6;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 80%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
+  overflow-x: hidden;
 }
 
-/* Typography System - Cyberpunk Style */
-.brand-display {
-  font-family: 'Orbitron', Arial, sans-serif;
-  font-weight: 900;
-  font-size: clamp(4rem, 8vw, 8rem);
-  line-height: 0.8;
-  color: var(--neon-cyan);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-shadow: 
-    0 0 10px var(--neon-cyan),
-    0 0 20px var(--neon-cyan),
-    0 0 40px var(--neon-cyan);
-  animation: pulse-glow 2s ease-in-out infinite alternate;
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0f1a 50%, #0f1a1a 100%);
 }
 
-@keyframes pulse-glow {
-  from {
-    text-shadow: 
-      0 0 10px var(--neon-cyan),
-      0 0 20px var(--neon-cyan),
-      0 0 40px var(--neon-cyan);
-  }
-  to {
-    text-shadow: 
-      0 0 5px var(--neon-cyan),
-      0 0 15px var(--neon-cyan),
-      0 0 30px var(--neon-cyan);
-  }
+/* Cyberpunk Color Variables */
+:root {
+  --cyber-bg: #0a0a0a;
+  --cyber-dark: #1a0f1a;
+  --cyber-cyan: #00ffff;
+  --cyber-magenta: #ff00ff;
+  --cyber-purple: #8a2be2;
+  --cyber-blue: #1e3a8a;
+  --cyber-green: #00ff41;
+  --cyber-yellow: #ffff00;
+  --cyber-text: #ffffff;
+  --cyber-text-dim: #b0b0b0;
+  --cyber-border: rgba(0, 255, 255, 0.3);
+  --cyber-glow: 0 0 20px;
 }
 
-.heading-1 {
-  font-family: 'Orbitron', Arial, sans-serif;
-  font-weight: 800;
-  font-size: clamp(3rem, 6vw, 6rem);
-  line-height: 0.9;
-  text-transform: uppercase;
-  color: var(--neon-magenta);
-  letter-spacing: 0.08em;
-  text-shadow: 
-    0 0 10px var(--neon-magenta),
-    0 0 20px var(--neon-magenta);
-}
-
-.heading-2 {
-  font-family: 'Orbitron', Arial, sans-serif;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', monospace;
   font-weight: 700;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: 0.9;
   text-transform: uppercase;
-  color: var(--neon-purple);
-  letter-spacing: 0.06em;
-  text-shadow: 
-    0 0 8px var(--neon-purple),
-    0 0 16px var(--neon-purple);
+  letter-spacing: 2px;
 }
 
-.heading-3 {
-  font-family: 'Orbitron', Arial, sans-serif;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  line-height: 1.1;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  letter-spacing: 0.04em;
+.cyber-title {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 4rem);
+  background: linear-gradient(45deg, var(--cyber-cyan), var(--cyber-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: var(--cyber-glow) var(--cyber-cyan);
+  margin-bottom: 1rem;
 }
 
-.heading-4 {
-  font-family: 'Rajdhani', Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: var(--text-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+.cyber-subtitle {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--cyber-cyan);
+  margin-bottom: 2rem;
 }
 
-.body-large {
-  font-family: 'Rajdhani', Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  color: var(--text-secondary);
-}
-
-.body-medium {
-  font-family: 'Rajdhani', Arial, sans-serif;
+.cyber-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--text-secondary);
+  color: var(--cyber-text-dim);
+  line-height: 1.7;
 }
 
-.body-small {
-  font-family: 'Rajdhani', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: var(--text-muted);
+/* Glowing Effects */
+.glow-cyan {
+  color: var(--cyber-cyan);
+  text-shadow: var(--cyber-glow) var(--cyber-cyan);
 }
 
-/* Cyberpunk Button System */
-.btn-primary {
-  background: linear-gradient(135deg, var(--brand-primary), var(--secondary-purple));
-  color: var(--neutral-white);
-  border: 2px solid var(--brand-primary);
-  border-radius: 0;
-  padding: 1em 2.5em;
-  font-family: 'Orbitron', Arial, sans-serif;
+.glow-magenta {
+  color: var(--cyber-magenta);
+  text-shadow: var(--cyber-glow) var(--cyber-magenta);
+}
+
+.glow-border {
+  border: 1px solid var(--cyber-cyan);
+  box-shadow: var(--cyber-glow) var(--cyber-cyan);
+}
+
+.glow-border-magenta {
+  border: 1px solid var(--cyber-magenta);
+  box-shadow: var(--cyber-glow) var(--cyber-magenta);
+}
+
+/* Buttons */
+.cyber-btn {
+  font-family: 'Orbitron', monospace;
   font-weight: 600;
-  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  border: 2px solid var(--cyber-cyan);
+  background: transparent;
+  color: var(--cyber-cyan);
   cursor: pointer;
-  transition: all 0.3s ease;
-  min-height: 48px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
-  box-shadow: 
-    0 0 20px rgba(255, 0, 255, 0.3),
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.btn-primary::before {
+.cyber-btn:hover {
+  color: var(--cyber-bg);
+  box-shadow: var(--cyber-glow) var(--cyber-cyan);
+}
+
+.cyber-btn::before {
   content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+  background: var(--cyber-cyan);
+  transition: left 0.3s ease;
+  z-index: -1;
 }
 
-.btn-primary:hover::before {
-  left: 100%;
+.cyber-btn:hover::before {
+  left: 0;
 }
 
-.btn-primary:hover {
-  box-shadow: 
-    0 0 30px rgba(255, 0, 255, 0.6),
-    inset 0 0 30px rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-  border-color: var(--neon-cyan);
+.cyber-btn-magenta {
+  border-color: var(--cyber-magenta);
+  color: var(--cyber-magenta);
 }
 
-.btn-primary:active {
-  transform: translateY(0);
+.cyber-btn-magenta:hover {
+  box-shadow: var(--cyber-glow) var(--cyber-magenta);
 }
 
-.btn-secondary {
-  background: transparent;
-  color: var(--neon-cyan);
-  border: 2px solid var(--neon-cyan);
-  border-radius: 0;
-  padding: 1em 2.5em;
-  font-family: 'Orbitron', Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  min-height: 48px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 
-    0 0 20px rgba(0, 255, 255, 0.2),
-    inset 0 0 20px rgba(0, 255, 255, 0.1);
+.cyber-btn-magenta::before {
+  background: var(--cyber-magenta);
 }
 
-.btn-secondary:hover {
-  background: var(--neon-cyan);
-  color: var(--text-inverse);
-  box-shadow: 
-    0 0 30px rgba(0, 255, 255, 0.6),
-    inset 0 0 30px rgba(0, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-
-/* Layout System */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.section-padding {
-  padding: 120px 0;
-}
-
-.section-padding-small {
-  padding: 80px 0;
-}
-
-/* Grid Systems */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-/* Cyberpunk Card Components */
-.card {
-  background: var(--bg-card);
-  border: 2px solid var(--border-medium);
-  border-radius: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  position: relative;
-  box-shadow: 
-    0 0 20px rgba(138, 43, 226, 0.2),
-    inset 0 0 20px rgba(138, 43, 226, 0.1);
-}
-
-.card::before {
-  content: '';
-  position: absolute;
+/* Navigation */
+.nav-container {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta), var(--neon-purple));
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--cyber-border);
+  z-index: 1000;
+  padding: 1rem 0;
 }
 
-.card:hover::before {
-  opacity: 1;
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  border-color: var(--neon-cyan);
-  box-shadow: 
-    0 0 30px rgba(0, 255, 255, 0.4),
-    0 10px 40px rgba(0, 0, 0, 0.3),
-    inset 0 0 30px rgba(0, 255, 255, 0.1);
-}
-
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 30px;
-}
-
-/* Navigation - Cyberpunk Style */
-.nav-link {
-  color: var(--text-primary);
+.nav-logo {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--cyber-cyan);
   text-decoration: none;
-  font-family: 'Orbitron', Arial, sans-serif;
-  font-size: 0.9rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--cyber-text);
+  text-decoration: none;
   font-weight: 500;
-  padding: 1em 1.5em;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
   position: relative;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--cyber-cyan);
 }
 
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: -5px;
+  left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+  background: var(--cyber-cyan);
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
-  width: 80%;
+  width: 100%;
 }
 
-.nav-link:hover {
-  color: var(--neon-cyan);
-  text-shadow: 0 0 10px var(--neon-cyan);
+.language-toggle {
+  background: transparent;
+  border: 1px solid var(--cyber-cyan);
+  color: var(--cyber-cyan);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Orbitron', monospace;
 }
 
-/* Cyberpunk Effects */
-.cyberpunk-border {
+.language-toggle:hover {
+  background: var(--cyber-cyan);
+  color: var(--cyber-bg);
+}
+
+/* Mobile Navigation */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cyber-cyan);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--cyber-border);
+  z-index: 999;
+}
+
+.mobile-nav.open {
+  display: block;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  padding: 2rem;
+}
+
+.mobile-nav-menu li {
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 100px 0;
   position: relative;
 }
 
-.cyberpunk-border::before {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 15, 26, 0.8), rgba(15, 26, 26, 0.8)), 
+              url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1920&h=1080&fit=crop') center/cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
+  animation: pulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cyber-card {
+  background: linear-gradient(135deg, rgba(26, 15, 26, 0.6), rgba(15, 26, 26, 0.6));
+  border: 1px solid var(--cyber-border);
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.cyber-card::before {
   content: '';
   position: absolute;
   top: -2px;
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-magenta), var(--neon-purple), var(--neon-blue));
-  border-radius: inherit;
+  background: linear-gradient(45deg, var(--cyber-cyan), var(--cyber-magenta), var(--cyber-cyan));
   z-index: -1;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.cyberpunk-border:hover::before {
-  opacity: 1;
+.cyber-card:hover::before {
+  opacity: 0.5;
 }
 
-/* Glitch Effect */
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
+.cyber-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
 }
 
-.glitch-text:hover {
-  animation: glitch 0.3s ease-in-out;
+/* Forms */
+.cyber-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: 'Orbitron', monospace;
+  color: var(--cyber-cyan);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(26, 15, 26, 0.6);
+  border: 1px solid var(--cyber-border);
+  color: var(--cyber-text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--cyber-cyan);
+  box-shadow: var(--cyber-glow) var(--cyber-cyan);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Tables */
+.cyber-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(26, 15, 26, 0.4);
+  margin-top: 2rem;
+}
+
+.cyber-table th,
+.cyber-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--cyber-border);
+}
+
+.cyber-table th {
+  background: rgba(0, 255, 255, 0.1);
+  font-family: 'Orbitron', monospace;
+  color: var(--cyber-cyan);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cyber-table tr:hover {
+  background: rgba(0, 255, 255, 0.05);
+}
+
+/* Tabs */
+.tabs-container {
+  margin-top: 2rem;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  background: transparent;
+  border: 1px solid var(--cyber-border);
+  color: var(--cyber-text-dim);
+  font-family: 'Orbitron', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tab-btn.active {
+  background: var(--cyber-cyan);
+  color: var(--cyber-bg);
+  border-color: var(--cyber-cyan);
+}
+
+.tab-btn:hover:not(.active) {
+  border-color: var(--cyber-cyan);
+  color: var(--cyber-cyan);
+}
+
+/* Footer */
+.footer {
+  background: rgba(10, 10, 10, 0.95);
+  border-top: 1px solid var(--cyber-border);
+  padding: 3rem 0 1rem;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+  color: var(--cyber-cyan);
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: var(--cyber-text-dim);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--cyber-cyan);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--cyber-border);
+  color: var(--cyber-text-dim);
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 30px;
-  }
-  
-  .grid-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
+  .nav-menu {
+    display: none;
   }
   
-  .section-padding {
-    padding: 80px 0;
+  .mobile-menu-btn {
+    display: block;
   }
   
-  .grid-2,
-  .grid-3,
-  .grid-4 {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
   
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    min-height: 52px;
+  .tabs-header {
+    flex-direction: column;
   }
   
-  .brand-display {
-    font-size: clamp(3rem, 12vw, 4rem);
+  .container {
+    padding: 0 1rem;
   }
 }
 
-/* Animation Classes */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 480px) {
+  .cyber-title {
+    font-size: 2rem;
   }
-}
-
-.slide-in-left {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: slideInLeft 0.8s ease forwards;
-}
-
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  
+  .cyber-subtitle {
+    font-size: 1.2rem;
   }
-}
-
-/* Utility Classes */
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-
-.mb-small { margin-bottom: 20px; }
-.mb-medium { margin-bottom: 40px; }
-.mb-large { margin-bottom: 80px; }
-
-.mt-small { margin-top: 20px; }
-.mt-medium { margin-top: 40px; }
-.mt-large { margin-top: 80px; }
-
-/* Cyberpunk Scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-page);
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--neon-cyan), var(--neon-magenta));
-  border-radius: 0;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--neon-magenta), var(--neon-purple));
-}
-
-/* Neon Text Effects */
-.neon-text {
-  color: var(--neon-cyan);
-  text-shadow: 
-    0 0 5px var(--neon-cyan),
-    0 0 10px var(--neon-cyan),
-    0 0 15px var(--neon-cyan),
-    0 0 20px var(--neon-cyan);
-}
-
-.neon-text-magenta {
-  color: var(--neon-magenta);
-  text-shadow: 
-    0 0 5px var(--neon-magenta),
-    0 0 10px var(--neon-magenta),
-    0 0 15px var(--neon-magenta),
-    0 0 20px var(--neon-magenta);
-}
-
-/* Circuit Pattern Background */
-.circuit-bg {
-  position: relative;
-  overflow: hidden;
-}
-
-.circuit-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
-  opacity: 0.3;
-  pointer-events: none;
+  
+  .cyber-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }

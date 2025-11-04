@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage";
-import { LanguageProvider } from "./context/LanguageContext";
+import { LanguageProvider } from './contexts/LanguageContext';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
