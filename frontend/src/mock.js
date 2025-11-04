@@ -107,9 +107,9 @@ export const mockData = {
     phone: "(Phone number will be provided later)",
     email: "(Email will be provided later)",
     hours: {
-      weekdays: "(Opening hours will be provided later)",
-      saturday: "(Opening hours will be provided later)", 
-      sunday: "(Opening hours will be provided later)"
+      weekdays: "Mon - Sat: 6:00 - 22:00",
+      saturday: "Mon - Sat: 6:00 - 22:00", 
+      sunday: "Sunday: 8:00 - 14:00"
     },
     socialMedia: {
       instagram: "@cosmotron_szeged",
