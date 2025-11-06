@@ -50,7 +50,7 @@ const HomePage = () => {
       <EquipmentSection data={mockData.equipment} language={currentLanguage} />
       <PricingSection data={mockData.pricing} language={currentLanguage} pricingData={data.pricing} />
       <ContactSection data={mockData.contact} contactData={data.contact} />
-      <Footer data={data.footer} contactData={mockData.contact} />
+      <Footer data={mockData.contact} footerData={data.footer} />
     </div>
   );
 };
