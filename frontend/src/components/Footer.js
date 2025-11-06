@@ -378,7 +378,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
                 onMouseEnter={(e) => e.target.style.color = 'var(--brand-primary)'}
                 onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
               >
-                Terms & Conditions
+                {footerData.termsConditions}
               </a>
             </div>
           </div>
