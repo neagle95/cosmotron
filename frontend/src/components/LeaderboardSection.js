@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Trophy, Medal, Award, Users, ExternalLink } from 'lucide-react';
 
-const LeaderboardSection = ({ data }) => {
+const LeaderboardSection = ({ data, leaderboardData }) => {
   const [activeTab, setActiveTab] = useState('men');
 
   const getRankIcon = (rank) => {
