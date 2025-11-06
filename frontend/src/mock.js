@@ -235,8 +235,6 @@ export const mockData = {
 
   // Leaderboard Data (same for both languages)
   leaderboard: {
-  // Leaderboard Data (same for both languages)
-  leaderboard: {
     men: [
       { rank: 1, name: "Kovács János", photo: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3", squat: 250, bench: 180, deadlift: 280, total: 710, dots: 485.2 },
       { rank: 2, name: "Nagy Péter", photo: "https://images.unsplash.com/photo-1583468982228-19f19164aee2?ixlib=rb-4.0.3", squat: 240, bench: 175, deadlift: 275, total: 690, dots: 472.1 },
