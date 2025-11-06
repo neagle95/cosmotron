@@ -365,7 +365,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
                 onMouseEnter={(e) => e.target.style.color = 'var(--brand-primary)'}
                 onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
               >
-                Privacy Policy
+                {footerData.privacyPolicy}
               </a>
               <a 
                 href="#terms" 
