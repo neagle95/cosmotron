@@ -136,7 +136,7 @@ const ContactSection = ({ data, contactData }) => {
                     marginBottom: '8px',
                     color: 'var(--text-primary)'
                   }}>
-                    Phone
+                    {contactData.phone}
                   </h4>
                   <p className="body-medium" style={{ color: 'var(--text-secondary)' }}>
                     {data.phone}
