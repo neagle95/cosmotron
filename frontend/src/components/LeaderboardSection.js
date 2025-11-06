@@ -123,14 +123,14 @@ const LeaderboardSection = ({ data, leaderboardData }) => {
             fontSize: '0.9rem',
             color: 'var(--neon-cyan)'
           }}>
-            <div style={{ textAlign: 'center' }}>RANK</div>
-            <div style={{ textAlign: 'center' }}>PHOTO</div>
-            <div>NAME</div>
-            <div style={{ textAlign: 'center' }}>SQUAT</div>
-            <div style={{ textAlign: 'center' }}>BENCH</div>
-            <div style={{ textAlign: 'center' }}>DEADLIFT</div>
-            <div style={{ textAlign: 'center' }}>TOTAL</div>
-            <div style={{ textAlign: 'center' }}>DOTS</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.rank}</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.photo}</div>
+            <div>{leaderboardData.headers.name}</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.squat}</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.bench}</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.deadlift}</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.total}</div>
+            <div style={{ textAlign: 'center' }}>{leaderboardData.headers.dots}</div>
           </div>
 
           {/* Table Body */}
