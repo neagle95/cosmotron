@@ -346,7 +346,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
               color: 'var(--text-secondary)',
               margin: 0
             }}>
-              © {new Date().getFullYear()} Cosmotron Powerlifting Gym. All rights reserved.
+              © {new Date().getFullYear()} {footerData.copyright}
             </p>
             
             <div style={{
