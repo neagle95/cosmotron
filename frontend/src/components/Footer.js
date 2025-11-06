@@ -198,7 +198,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
               letterSpacing: '0.05em',
               marginBottom: '25px'
             }}>
-              Contact Info
+              {footerData.contactInfo}
             </h4>
             
             <div style={{ marginBottom: '20px' }}>
