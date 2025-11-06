@@ -97,7 +97,7 @@ const LeaderboardSection = ({ data, leaderboardData }) => {
               }}
             >
               <Users size={18} />
-              TOP 10 WOMEN
+              {leaderboardData.topWomen}
             </button>
           </div>
         </div>
