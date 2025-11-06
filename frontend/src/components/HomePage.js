@@ -45,7 +45,7 @@ const HomePage = () => {
       <Header />
       <HeroSection data={data.hero} />
       <AboutSection data={data.about} />
-      <LeaderboardSection data={data.leaderboard} leaderboardData={mockData.leaderboard} />
+      <LeaderboardSection data={mockData.leaderboard} leaderboardData={data.leaderboard} />
       <BookingSection data={data.booking} />
       <EquipmentSection data={mockData.equipment} language={currentLanguage} />
       <PricingSection data={mockData.pricing} language={currentLanguage} pricingData={data.pricing} />
