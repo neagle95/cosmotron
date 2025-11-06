@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Facebook, Music, Dumbbell } from 'lucide-react';
 
-const Footer = ({ data, footerData }) => {
+const Footer = ({ data, footerData, contactData, navigationData }) => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
