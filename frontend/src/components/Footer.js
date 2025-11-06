@@ -18,7 +18,14 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
     }
   };
 
-  const quickLinks = [
+  const quickLinks = navigationData ? [
+    { label: navigationData.aboutUs, id: 'about' },
+    { label: navigationData.leaderboard, id: 'leaderboard' },
+    { label: navigationData.booking, id: 'booking' },
+    { label: navigationData.equipment, id: 'equipment' },
+    { label: navigationData.pricing, id: 'pricing' },
+    { label: navigationData.contact, id: 'contact' }
+  ] : [
     { label: 'About Us', id: 'about' },
     { label: 'Leaderboard', id: 'leaderboard' },
     { label: 'Booking', id: 'booking' },
