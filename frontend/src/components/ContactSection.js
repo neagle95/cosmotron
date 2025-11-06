@@ -67,7 +67,7 @@ const ContactSection = ({ data, contactData }) => {
               marginBottom: '40px',
               color: 'var(--text-primary)'
             }}>
-              VISIT COSMOTRON
+              {contactData.visitUs}
             </h3>
 
             {/* Contact Details */}
