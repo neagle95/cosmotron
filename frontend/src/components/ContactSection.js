@@ -49,14 +49,14 @@ const ContactSection = ({ data, contactData }) => {
         {/* Section Header */}
         <div className="text-center mb-large">
           <h2 className="heading-1 fade-in" style={{ marginBottom: '30px' }}>
-            GET IN TOUCH
+            {contactData.title}
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
             margin: '0 auto',
             color: 'var(--text-secondary)'
           }}>
-            Ready to start your strength journey? Visit us, call us, or send us a message.
+            {contactData.subtitle}
           </p>
         </div>
 
