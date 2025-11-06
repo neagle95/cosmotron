@@ -97,7 +97,7 @@ const Footer = ({ data, footerData }) => {
                 letterSpacing: '0.05em',
                 marginBottom: '15px'
               }}>
-                Follow Us
+                {footerData.contactInfo}
               </h4>
               <div style={{
                 display: 'flex',
