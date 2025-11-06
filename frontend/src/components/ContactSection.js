@@ -230,7 +230,7 @@ const ContactSection = ({ data, contactData }) => {
                 marginBottom: '20px',
                 color: 'var(--text-primary)'
               }}>
-                Follow Us
+                {contactData.followUs}
               </h4>
               <div style={{
                 display: 'flex',
