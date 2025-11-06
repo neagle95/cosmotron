@@ -288,7 +288,7 @@ const ContactSection = ({ data, contactData }) => {
                 color: 'var(--text-primary)',
                 textAlign: 'center'
               }}>
-                SEND US A MESSAGE
+                {contactData.sendMessage}
               </h3>
 
               {submitMessage ? (
