@@ -172,7 +172,7 @@ const ContactSection = ({ data, contactData }) => {
                     marginBottom: '8px',
                     color: 'var(--text-primary)'
                   }}>
-                    Email
+                    {contactData.email}
                   </h4>
                   <p className="body-medium" style={{ color: 'var(--text-secondary)' }}>
                     {data.email}
