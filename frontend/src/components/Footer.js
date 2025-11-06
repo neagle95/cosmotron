@@ -261,7 +261,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
               letterSpacing: '0.05em',
               marginBottom: '25px'
             }}>
-              Opening Hours
+              {footerData.openingHours}
             </h4>
             
             <div>
