@@ -100,7 +100,7 @@ const ContactSection = ({ data, contactData }) => {
                     marginBottom: '8px',
                     color: 'var(--text-primary)'
                   }}>
-                    Address
+                    {contactData.address}
                   </h4>
                   <p className="body-medium" style={{ color: 'var(--text-secondary)' }}>
                     {data.address}
