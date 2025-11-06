@@ -207,7 +207,7 @@ const ContactSection = ({ data, contactData }) => {
                     marginBottom: '12px',
                     color: 'var(--text-primary)'
                   }}>
-                    Opening Hours
+                    {contactData.openingHours}
                   </h4>
                   <div style={{ color: 'var(--text-secondary)' }}>
                     <p className="body-small" style={{ marginBottom: '5px' }}>
