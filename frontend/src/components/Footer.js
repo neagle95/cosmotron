@@ -74,7 +74,7 @@ const Footer = ({ data, footerData }) => {
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
                 }}>
-                  Power Beyond Gravity
+                  {footerData.slogan}
                 </p>
               </div>
             </div>
