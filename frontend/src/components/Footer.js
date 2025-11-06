@@ -150,7 +150,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
               letterSpacing: '0.05em',
               marginBottom: '25px'
             }}>
-              Quick Links
+              {footerData.quickLinks}
             </h4>
             <nav>
               <ul style={{ 
