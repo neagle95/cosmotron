@@ -97,7 +97,7 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
                 letterSpacing: '0.05em',
                 marginBottom: '15px'
               }}>
-                {footerData.contactInfo}
+                {contactData.followUs}
               </h4>
               <div style={{
                 display: 'flex',
