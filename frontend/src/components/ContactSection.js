@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Instagram, Facebook, Youtube } from 'lucide-react';
 import { mockAPI } from '../mock';
 
-const ContactSection = ({ data }) => {
+const ContactSection = ({ data, contactData }) => {
   const [contactForm, setContactForm] = useState({
     name: '',
     email: '',
