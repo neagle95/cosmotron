@@ -52,7 +52,7 @@ const LeaderboardSection = ({ data, leaderboardData }) => {
         {/* Section Header */}
         <div className="text-center mb-large">
           <h2 className="heading-1 fade-in neon-text" style={{ marginBottom: '30px' }}>
-            LEADERBOARD
+            {leaderboardData.title}
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
@@ -60,7 +60,7 @@ const LeaderboardSection = ({ data, leaderboardData }) => {
             color: 'var(--text-secondary)',
             marginBottom: '40px'
           }}>
-            Featuring the strongest lifters from our gym and the city of Szeged.
+            {leaderboardData.subtitle}
           </p>
 
           {/* Tab Selector */}
