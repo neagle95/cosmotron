@@ -70,8 +70,8 @@ const ContactSection = ({ data, contactData }) => {
           </p>
         </div>
 
-        <div className="grid-2" style={{ gap: '60px', alignItems: 'flex-start' }}>
-          {/* Contact Information */}
+        {/* Contact Information */}
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div className="fade-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="heading-3" style={{ 
               marginBottom: '40px',
