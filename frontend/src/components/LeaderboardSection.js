@@ -230,22 +230,166 @@ const LeaderboardSection = ({ data, leaderboardData }) => {
           </div>
         </div>
 
-        {/* How to get on the list button */}
-        <div className="text-center" style={{ marginTop: '50px' }}>
-          <button 
-            className="btn-secondary cyberpunk-border"
-            style={{
-              fontSize: '1.1rem',
-              padding: '15px 30px',
-              fontFamily: 'Orbitron, Arial, sans-serif',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '10px'
-            }}
-          >
-            <ExternalLink size={20} />
-            HOW CAN I GET ON THE LIST?
-          </button>
+        {/* How to get on the list - Rules Section */}
+        <div style={{ marginTop: '60px' }}>
+          <h3 className="heading-2" style={{ 
+            marginBottom: '40px',
+            textAlign: 'center',
+            color: 'var(--brand-primary)'
+          }}>
+            {leaderboardData.howToGetOn}
+          </h3>
+          
+          <div style={{
+            background: 'var(--bg-card)',
+            border: '2px solid var(--border-medium)',
+            borderRadius: '16px',
+            padding: '40px',
+            maxWidth: '1200px',
+            margin: '0 auto'
+          }}>
+            {/* Purpose */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.purpose.title}
+              </h4>
+              <p className="body-medium" style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.purpose.text}
+              </p>
+            </div>
+
+            {/* Who can appear */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.whoCanAppear.title}
+              </h4>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.whoCanAppear.items.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* What counts */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.whatCounts.title}
+              </h4>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.whatCounts.items.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* How to get on the list */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.howToGet.title}
+              </h4>
+              <p className="body-medium" style={{ color: 'var(--text-secondary)', marginBottom: '15px', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.intro}
+              </p>
+              <p className="body-medium" style={{ color: 'var(--text-secondary)', marginBottom: '10px', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.exercises}
+              </p>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', marginBottom: '15px', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.exerciseRules.map((rule, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{rule}</li>
+                ))}
+              </ul>
+              
+              {/* Commands */}
+              <p className="body-medium" style={{ color: 'var(--text-primary)', fontWeight: 600, marginBottom: '10px' }}>
+                {leaderboardData.rules.howToGet.commands.title}:
+              </p>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', marginBottom: '15px', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.commands.list.map((cmd, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{cmd}</li>
+                ))}
+              </ul>
+
+              {/* Clothing */}
+              <p className="body-medium" style={{ color: 'var(--text-primary)', fontWeight: 600, marginBottom: '10px' }}>
+                {leaderboardData.rules.howToGet.clothing.title}:
+              </p>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', marginBottom: '15px', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.clothing.allowed.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+              <p className="body-medium" style={{ color: 'var(--text-secondary)', marginBottom: '15px', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.clothing.notAllowed}
+              </p>
+              <p className="body-medium" style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.howToGet.verification}
+              </p>
+            </div>
+
+            {/* Weight class */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.weightClass.title}
+              </h4>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.weightClass.items.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Updates */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.updates.title}
+              </h4>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.updates.items.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Rewards */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.rewards.title}
+              </h4>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.rewards.items.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Documentation */}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.documentation.title}
+              </h4>
+              <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                {leaderboardData.rules.documentation.items.map((item, idx) => (
+                  <li key={idx} className="body-medium" style={{ marginBottom: '8px' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Closing */}
+            <div style={{ 
+              marginTop: '40px',
+              padding: '20px',
+              background: 'var(--bg-page)',
+              borderRadius: '12px',
+              border: '1px solid var(--brand-primary)'
+            }}>
+              <h4 className="heading-4" style={{ color: 'var(--brand-primary)', marginBottom: '15px' }}>
+                {leaderboardData.rules.closing.title}
+              </h4>
+              <p className="body-medium" style={{ color: 'var(--text-secondary)', lineHeight: 1.8, margin: 0 }}>
+                {leaderboardData.rules.closing.text}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
