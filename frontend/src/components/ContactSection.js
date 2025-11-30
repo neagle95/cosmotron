@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Instagram, Facebook, Youtube } from 'lucide-react';
-import { mockAPI } from '../mock';
+import axios from 'axios';
 
 const ContactSection = ({ data, contactData }) => {
   const [contactForm, setContactForm] = useState({
@@ -12,20 +12,30 @@ const ContactSection = ({ data, contactData }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage('');
+    setSubmitSuccess(false);
     
     try {
-      const result = await mockAPI.submitContactForm(contactForm);
-      setSubmitMessage(result.message);
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
+      const response = await axios.post(`${backendUrl}/api/contact`, contactForm);
+      
+      setSubmitMessage(response.data.message);
+      setSubmitSuccess(true);
       setContactForm({ name: '', email: '', phone: '', subject: '', message: '' });
+      
       setTimeout(() => {
         setSubmitMessage('');
-      }, 3000);
+        setSubmitSuccess(false);
+      }, 5000);
     } catch (error) {
-      setSubmitMessage('Error sending message. Please try again.');
+      console.error('Contact form error:', error);
+      setSubmitMessage(error.response?.data?.detail || 'Error sending message. Please try again or email us directly at cosmotrongym@gmail.com');
+      setSubmitSuccess(false);
     } finally {
       setIsSubmitting(false);
     }
