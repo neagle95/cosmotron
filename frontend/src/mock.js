@@ -509,12 +509,12 @@ export const mockData = {
 
   // Contact Information
   contact: {
-    address: "Szeged, Hungary (Address will be provided later)",
-    addressHu: "Szeged, Magyarország (Cím később kerül megadásra)",
-    phone: "(Phone number will be provided later)",
-    phoneHu: "(Telefonszám később kerül megadásra)",
-    email: "(Email will be provided later)",
-    emailHu: "(Email később kerül megadásra)",
+    address: "Szeged, Kálvária sgt. 14.",
+    addressHu: "Szeged, Kálvária sgt. 14.",
+    phone: "+36 70 431 9953",
+    phoneHu: "+36 70 431 9953",
+    email: "cosmotrongym@gmail.com",
+    emailHu: "cosmotrongym@gmail.com",
     hours: {
       weekdays: "Mon - Sat: 6:00 - 22:00",
       weekdaysHu: "Hét - Szo: 6:00 - 22:00",
@@ -527,7 +527,8 @@ export const mockData = {
       instagram: "@cosmotron_szeged",
       facebook: "CosmotronSzeged",
       tiktok: "@cosmotrongym"
-    }
+    },
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.4644871658876!2d20.145515776455847!3d46.24681997112442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4744873a5e8c3c3b%3A0x9f8e4e7c4e7c4e7c!2sSzeged%2C%20K%C3%A1lv%C3%A1ria%20sgt.%2014%2C%206724!5e0!3m2!1sen!2shu!4v1234567890123!5m2!1sen!2shu"
   }
 };
 
