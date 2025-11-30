@@ -101,7 +101,7 @@ export const mockData = {
               "shoes (squat shoes, deadlift slippers, or any training shoe)",
               "knee wraps OR knee sleeves"
             ],
-            notAllowed: "NOT allowed: elbow sleeves, equipped gear, straps, or any other equipment not listed under \"Clothing\"."
+            notAllowed: "NOT allowed: elbow sleeves, equipped gear, straps, or any other equipment not listed under 'Clothing'."
           },
           verification: "The performance is verified by the gym owner, and a record is created."
         },
