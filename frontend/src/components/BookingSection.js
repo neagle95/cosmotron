@@ -1,7 +1,7 @@
 import React from 'react';
-import { Calendar, Clock, Users, AlertCircle } from 'lucide-react';
+import { Calendar, Mail, Scale } from 'lucide-react';
 
-const BookingSection = () => {
+const BookingSection = ({ data }) => {
   return (
     <section id="booking" className="section-padding circuit-bg" style={{
       background: 'var(--bg-card)',
@@ -11,14 +11,14 @@ const BookingSection = () => {
         {/* Section Header */}
         <div className="text-center mb-large">
           <h2 className="heading-1 fade-in neon-text-magenta" style={{ marginBottom: '30px' }}>
-            BOOKING
+            {data.title}
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
             margin: '0 auto',
             color: 'var(--text-secondary)'
           }}>
-            Reserve your training time and secure your spot at Cosmotron.
+            {data.subtitle}
           </p>
         </div>
 
