@@ -1,46 +1,7 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Instagram, Facebook, Youtube } from 'lucide-react';
-import axios from 'axios';
+import React from 'react';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from 'lucide-react';
 
 const ContactSection = ({ data, contactData }) => {
-  const [contactForm, setContactForm] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage('');
-    setSubmitSuccess(false);
-    
-    try {
-      const backendUrl = process.env.REACT_APP_BACKEND_URL || '';
-      const response = await axios.post(`${backendUrl}/api/contact`, contactForm);
-      
-      setSubmitMessage(response.data.message);
-      setSubmitSuccess(true);
-      setContactForm({ name: '', email: '', phone: '', subject: '', message: '' });
-      
-      setTimeout(() => {
-        setSubmitMessage('');
-        setSubmitSuccess(false);
-      }, 5000);
-    } catch (error) {
-      console.error('Contact form error:', error);
-      setSubmitMessage(error.response?.data?.detail || 'Error sending message. Please try again or email us directly at cosmotrongym@gmail.com');
-      setSubmitSuccess(false);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const getSocialIcon = (platform) => {
     switch (platform.toLowerCase()) {
       case 'instagram': return <Instagram size={20} />;
