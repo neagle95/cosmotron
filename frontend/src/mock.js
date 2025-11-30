@@ -257,7 +257,98 @@ export const mockData = {
         total: "ÖSSZESEN",
         dots: "DOTS"
       },
-      howToGetOn: "HOGYAN KERÜLHETEK FEL A LISTÁRA?"
+      howToGetOn: "HOGYAN KERÜLHETEK FEL A LISTÁRA?",
+      rules: {
+        purpose: {
+          title: "A rangsor célja",
+          text: "Motiválni, elismerést adni és nyomon követni az edzőterem legerősebb tagjait. A „Top 10 férfi" és „Top 10 nő" listákra azok kerülnek fel, akik megfelelnek az alábbi feltételeknek."
+        },
+        whoCanAppear: {
+          title: "Ki kerülhet fel a listára?",
+          items: [
+            "Bárki, aki az edzőteremben érvényes havi bérlettel edz.",
+            "Csak az edzőteremen belül végzett gyakorlatok számítanak.",
+            "Minden jelentkezőnek legalább 1 hónapos aktív edzéstörténettel kell rendelkeznie nálunk."
+          ]
+        },
+        whatCounts: {
+          title: "Milyen eredmények számítanak?",
+          items: [
+            "RAW erőemelő összesített: guggolás + fekve nyomás + felhúzás",
+            "Minden emelést ugyanazon a napon kell teljesíteni (egy edzésen belül).",
+            "Csak az edzőterem tulajdonosa által elfogadott, szabályosan végrehajtott emelések érvényesek."
+          ]
+        },
+        howToGet: {
+          title: "Hogyan kerülhetek fel a listára?",
+          intro: "A kísérleteket előre be kell jelenteni (legalább 48 órával), hogy az edzőterem tulajdonosa jelen lehessen.",
+          exercises: "A gyakorlatokat a Magyar Erőemelő Szövetség szabályai szerint kell végrehajtani (további részletek: https://powerlifting.hu/hu/#links – versenyszabályok):",
+          exerciseRules: [
+            "Guggolás: mélység a térdvonal alatt",
+            "Fekve nyomás: kontrollált, megállított",
+            "Felhúzás: a rúd nem csúszhat ki a kézből, nem elejthető"
+          ],
+          commands: {
+            title: "Parancsok",
+            list: [
+              "Guggolás: Squat; Down",
+              "Fekve nyomás: Start; Press; Rack",
+              "Felhúzás: Down"
+            ]
+          },
+          clothing: {
+            title: "Öltözet",
+            allowed: [
+              "trikó (ha van)",
+              "póló",
+              "rövidnadrág (ha nem használsz trikót)",
+              "öv",
+              "csuklószorító",
+              "térdig érő zokni (felhúzáshoz)",
+              "cipő (guggolócipő, felhúzó papucs vagy bármilyen edzőcipő)",
+              "térdszorító VAGY térdvédő"
+            ],
+            notAllowed: "NEM engedélyezett: könyökvédő, felszerelt felszerelés, pánt vagy bármilyen más, az „Öltözet" alatt fel nem sorolt felszerelés."
+          },
+          verification: "A teljesítményt az edzőterem tulajdonosa ellenőrzi, és feljegyzést készít."
+        },
+        weightClass: {
+          title: "Súlycsoport, nem, rangsorolás",
+          items: [
+            "Külön listák férfiak és nők számára.",
+            "Nincsenek súlycsoportok; a rangsorolás DOTS alapján történik (https://strengthinumbrs.com/dots-calculator/).",
+            "A mérlegelés az edzőterem mérlegén történhet a kísérlet napján vagy 24 órával korábban (ha előre bejelentve)."
+          ]
+        },
+        updates: {
+          title: "Frissítések és érvényesség",
+          items: [
+            "A ranglista havonta egyszer frissül.",
+            "Minden eredmény a tárgyév december 31-ig érvényes; ezután a lista nullázódik.",
+            "Minden rangsorolt tagnak megfelelő viselkedést kell tanúsítania. Agresszív vagy tiszteletlen magatartás a listáról való eltávolítást eredményezheti."
+          ]
+        },
+        rewards: {
+          title: "Jutalmak és elismerés",
+          items: [
+            "A Top 10 sportolók nevei és eredményei megjelennek a falon, valamint a weboldalon / közösségi médiában.",
+            "Év végén a Top 3 férfi és nő különleges jutalmakat kap (pl. tagsági bérlet, ajándékok, verseny támogatás)."
+          ]
+        },
+        documentation: {
+          title: "Dokumentáció és átláthatóság",
+          items: [
+            "Minden kísérletet videóra rögzítünk a tisztességes értékelés érdekében.",
+            "A jelenlegi lista nyilvános és elérhető az edzőteremben és online.",
+            "A résztvevők beleegyeznek, hogy nevük és képük megjelenjen.",
+            "Kérésre legfeljebb 2 segítőt hozhatsz; ha nem edznek, számukra ingyenes a belépés."
+          ]
+        },
+        closing: {
+          title: "Záró nyilatkozat",
+          text: "A szabályok célja az egyenlő feltételek biztosítása. Az edzőterem vezetése fenntartja a jogot a szabályok módosítására, ha az a közösség érdekét szolgálja."
+        }
+      }
     },
 
     // Booking Section  
