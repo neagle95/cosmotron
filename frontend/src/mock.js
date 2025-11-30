@@ -261,7 +261,7 @@ export const mockData = {
       rules: {
         purpose: {
           title: "A rangsor célja",
-          text: "Motiválni, elismerést adni és nyomon követni az edzőterem legerősebb tagjait. A „Top 10 férfi" és „Top 10 nő" listákra azok kerülnek fel, akik megfelelnek az alábbi feltételeknek."
+          text: "Motiválni, elismerést adni és nyomon követni az edzőterem legerősebb tagjait. A 'Top 10 férfi' és 'Top 10 nő' listákra azok kerülnek fel, akik megfelelnek az alábbi feltételeknek."
         },
         whoCanAppear: {
           title: "Ki kerülhet fel a listára?",
