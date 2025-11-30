@@ -308,7 +308,7 @@ export const mockData = {
               "cipő (guggolócipő, felhúzó papucs vagy bármilyen edzőcipő)",
               "térdszorító VAGY térdvédő"
             ],
-            notAllowed: "NEM engedélyezett: könyökvédő, felszerelt felszerelés, pánt vagy bármilyen más, az „Öltözet" alatt fel nem sorolt felszerelés."
+            notAllowed: "NEM engedélyezett: könyökvédő, felszerelt felszerelés, pánt vagy bármilyen más, az 'Öltözet' alatt fel nem sorolt felszerelés."
           },
           verification: "A teljesítményt az edzőterem tulajdonosa ellenőrzi, és feljegyzést készít."
         },
