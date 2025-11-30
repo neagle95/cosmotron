@@ -50,7 +50,98 @@ export const mockData = {
         total: "TOTAL",
         dots: "DOTS"
       },
-      howToGetOn: "HOW CAN I GET ON THE LIST?"
+      howToGetOn: "HOW CAN I GET ON THE LIST?",
+      rules: {
+        purpose: {
+          title: "Purpose of the Ranking",
+          text: "To motivate, recognize, and track the strongest members of the gym. The \"Top 10 Men\" and \"Top 10 Women\" lists include those who meet the conditions below."
+        },
+        whoCanAppear: {
+          title: "Who can appear on the list?",
+          items: [
+            "Anyone training at the gym with a valid monthly pass.",
+            "Only exercises performed inside the gym count.",
+            "Each applicant must have at least 1 month of active training history with us."
+          ]
+        },
+        whatCounts: {
+          title: "What results count?",
+          items: [
+            "RAW powerlifting total: squat + bench press + deadlift",
+            "All lifts must be completed on the same day (within one training session).",
+            "Only properly executed lifts accepted by the gym owner are valid."
+          ]
+        },
+        howToGet: {
+          title: "How to get on the list?",
+          intro: "Attempts must be announced in advance (at least 48 hours), so the gym owner can be present.",
+          exercises: "Exercises must be performed according to the rules of the Hungarian Professional League (more details: https://powerlifting.hu/hu/#links – competition rules):",
+          exerciseRules: [
+            "Squat: depth below the knee line",
+            "Bench press: controlled, paused",
+            "Deadlift: bar cannot slip from the hands, cannot be dropped"
+          ],
+          commands: {
+            title: "Commands",
+            list: [
+              "Squat: Squat; Down",
+              "Bench press: Start; Press; Rack",
+              "Deadlift: Down"
+            ]
+          },
+          clothing: {
+            title: "Clothing",
+            allowed: [
+              "singlet (if available)",
+              "T‑shirt",
+              "shorts (if not using a singlet)",
+              "belt",
+              "wrist wraps",
+              "knee‑high socks (for deadlift)",
+              "shoes (squat shoes, deadlift slippers, or any training shoe)",
+              "knee wraps OR knee sleeves"
+            ],
+            notAllowed: "NOT allowed: elbow sleeves, equipped gear, straps, or any other equipment not listed under \"Clothing\"."
+          },
+          verification: "The performance is verified by the gym owner, and a record is created."
+        },
+        weightClass: {
+          title: "Weight class, gender, ranking",
+          items: [
+            "Separate lists for men and women.",
+            "No weight classes; ranking is based on DOTS (https://strengthinumbrs.com/dots-calculator/).",
+            "Weigh‑ins may be done on the gym scale on the day of the attempt or 24 hours prior (if announced in advance)."
+          ]
+        },
+        updates: {
+          title: "Updates & Validity",
+          items: [
+            "The leaderboard is updated once per month.",
+            "All results are valid until December 31 of the current calendar year; then the list resets.",
+            "All ranked members must show proper behavior. Aggressive or disrespectful conduct may result in removal from the list."
+          ]
+        },
+        rewards: {
+          title: "Rewards & Recognition",
+          items: [
+            "The names and results of Top 10 athletes are displayed on the wall, and also on the website / social media.",
+            "At year's end, the Top 3 men and women receive special rewards (e.g., membership pass, gifts, competition support)."
+          ]
+        },
+        documentation: {
+          title: "Documentation & Transparency",
+          items: [
+            "All attempts are recorded on video for fair evaluation.",
+            "The current list is public and available in the gym and online.",
+            "Participants agree to have their name and image displayed.",
+            "Upon request, you may bring up to 2 helpers; if they do not train, entry is free for them."
+          ]
+        },
+        closing: {
+          title: "Closing Statement",
+          text: "The aim of the rules is to ensure equal conditions. The gym management reserves the right to modify the rules if it serves the community's best interests."
+        }
+      }
     },
 
     // Booking Section
