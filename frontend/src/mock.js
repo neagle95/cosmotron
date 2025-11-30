@@ -351,19 +351,16 @@ export const mockData = {
     // Booking Section  
     booking: {
       title: "FOGLALÁS",
-      subtitle: "Foglald le az edzési idődet és biztosítsd a helyed a Cosmotronban.",
-      systemTitle: "FOGLALÁSI RENDSZER",
-      description: "Fejlett foglalási rendszerünk hamarosan elérhető lesz itt. Foglald le edzési időpontjaidat és kezeld egyszerűen a programodat.",
-      features: {
-        timeSlots: "Időpontok",
-        timeSlotsDesc: "Konkrét edzési idők lefoglalása",
-        capacity: "Kapacitás Kezelés",
-        capacityDesc: "Optimális edzési tér biztosítása", 
-        cancellation: "Egyszerű Lemondás",
-        cancellationDesc: "Rugalmas foglalás módosítások"
-      },
-      comingSoon: "HAMAROSAN",
-      comingSoonDesc: "A foglalási rendszer hamarosan fejlesztésre és integrálásra kerül."
+      subtitle: "Időpontot egyeztess velünk a ranglista kísérletedhez.",
+      mainText: "Az időpontegyeztetés e-mailben vagy személyesen a recepcióban történik.",
+      coordinationText: "Ha az általad választott időpont már foglalt, e-mailben (vagy személyesen) folytatjuk az egyeztetést.",
+      weighInTitle: "Két lehetőséged van a mérlegelésre:",
+      weighInOptions: [
+        "24 órával a megbeszélt időpont előtt, VAGY",
+        "1 órával a megbeszélt időpont előtt (ha ugyannapi mérlegelést választasz)."
+      ],
+      exampleTitle: "Példa e-mail:",
+      exampleText: "'Szia, X.Y. vagyok, szeretnék kedden 10:00-kor emelést kísérelni, ugyannapi mérlegeléssel.'"
     },
 
     // Equipment Section
