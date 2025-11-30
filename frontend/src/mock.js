@@ -147,19 +147,16 @@ export const mockData = {
     // Booking Section
     booking: {
       title: "BOOKING",
-      subtitle: "Reserve your training time and secure your spot at Cosmotron.",
-      systemTitle: "BOOKING SYSTEM",
-      description: "Our advanced booking system will be available here soon. Reserve your training sessions and manage your schedule with ease.",
-      features: {
-        timeSlots: "Time Slots",
-        timeSlotsDesc: "Reserve specific training times",
-        capacity: "Capacity Management", 
-        capacityDesc: "Ensure optimal training space",
-        cancellation: "Easy Cancellation",
-        cancellationDesc: "Flexible booking modifications"
-      },
-      comingSoon: "COMING SOON",
-      comingSoonDesc: "The booking system will be developed and integrated here shortly."
+      subtitle: "Schedule your leaderboard attempt with us.",
+      mainText: "Appointment scheduling is available via email or in person at the reception.",
+      coordinationText: "If the time slot you selected is already booked, we will continue coordinating via email (or in person).",
+      weighInTitle: "You have two options for weigh-ins:",
+      weighInOptions: [
+        "24 hours before the agreed appointment, OR",
+        "1 hour before the agreed appointment (if you choose same-day weigh-in)."
+      ],
+      exampleTitle: "Example email:",
+      exampleText: "'Hello, my name is X.Y., I would like to attempt a lift on Tuesday at 10:00, with same-day weigh-in.'"
     },
 
     // Equipment Section
