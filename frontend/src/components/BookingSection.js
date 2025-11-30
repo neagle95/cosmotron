@@ -22,160 +22,113 @@ const BookingSection = ({ data }) => {
           </p>
         </div>
 
-        {/* Calendar Placeholder */}
+        {/* Booking Information */}
         <div className="fade-in" style={{
           background: 'var(--bg-page)',
           border: '2px solid var(--border-medium)',
-          padding: '60px',
-          textAlign: 'center',
-          position: 'relative',
-          overflow: 'hidden'
+          borderRadius: '16px',
+          padding: '50px',
+          maxWidth: '900px',
+          margin: '0 auto',
+          position: 'relative'
         }}>
-          {/* Background Grid Pattern */}
+          {/* Icons Section */}
           <div style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: `
-              linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-              linear-gradient(180deg, rgba(255, 0, 255, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '30px 30px',
-            opacity: 0.3
-          }} />
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '40px',
+            marginBottom: '40px'
+          }}>
+            <Calendar 
+              size={60} 
+              color="var(--neon-cyan)"
+              style={{
+                filter: 'drop-shadow(0 0 15px var(--neon-cyan))'
+              }}
+            />
+            <Mail 
+              size={60} 
+              color="var(--neon-magenta)"
+              style={{
+                filter: 'drop-shadow(0 0 15px var(--neon-magenta))'
+              }}
+            />
+            <Scale 
+              size={60} 
+              color="var(--neon-purple)"
+              style={{
+                filter: 'drop-shadow(0 0 15px var(--neon-purple))'
+              }}
+            />
+          </div>
 
-          <div style={{ position: 'relative', zIndex: 1 }}>
-            {/* Calendar Icon */}
-            <div style={{
-              display: 'flex',
-              justifyContent: 'center',
-              marginBottom: '30px'
+          {/* Main Text */}
+          <div style={{ marginBottom: '30px' }}>
+            <p className="body-large" style={{ 
+              color: 'var(--text-primary)',
+              marginBottom: '15px',
+              lineHeight: 1.8,
+              textAlign: 'center'
             }}>
-              <Calendar 
-                size={80} 
-                color="var(--neon-cyan)"
-                style={{
-                  filter: 'drop-shadow(0 0 20px var(--neon-cyan))'
-                }}
-              />
-            </div>
+              {data.mainText}
+            </p>
+            <p className="body-large" style={{ 
+              color: 'var(--text-secondary)',
+              lineHeight: 1.8,
+              textAlign: 'center'
+            }}>
+              {data.coordinationText}
+            </p>
+          </div>
 
-            {/* Title */}
-            <h3 className="heading-2 neon-text" style={{ 
+          {/* Weigh-in Options */}
+          <div style={{
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border-medium)',
+            borderRadius: '12px',
+            padding: '30px',
+            marginBottom: '30px'
+          }}>
+            <h4 className="heading-4" style={{ 
+              color: 'var(--brand-primary)',
               marginBottom: '20px',
+              textAlign: 'center'
+            }}>
+              {data.weighInTitle}
+            </h4>
+            <ul style={{ 
+              paddingLeft: '20px',
+              color: 'var(--text-secondary)',
+              lineHeight: 2
+            }}>
+              {data.weighInOptions.map((option, idx) => (
+                <li key={idx} className="body-medium">{option}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Example Email */}
+          <div style={{
+            background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1))',
+            border: '2px solid var(--neon-cyan)',
+            borderRadius: '12px',
+            padding: '30px'
+          }}>
+            <h4 className="heading-4" style={{ 
+              color: 'var(--neon-cyan)',
+              marginBottom: '15px',
               fontFamily: 'Orbitron, Arial, sans-serif'
             }}>
-              BOOKING SYSTEM
-            </h3>
-
-            {/* Description */}
-            <p className="body-large" style={{ 
-              marginBottom: '40px',
-              color: 'var(--text-secondary)',
-              maxWidth: '500px',
-              margin: '0 auto 40px auto'
+              {data.exampleTitle}
+            </h4>
+            <p className="body-medium" style={{ 
+              color: 'var(--text-primary)',
+              fontStyle: 'italic',
+              lineHeight: 1.8,
+              margin: 0
             }}>
-              Our advanced booking system will be available here soon. Reserve your training sessions and manage your schedule with ease.
+              {data.exampleText}
             </p>
-
-            {/* Features List */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-              gap: '30px',
-              marginBottom: '40px'
-            }}>
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '15px',
-                padding: '20px',
-                background: 'rgba(0, 255, 255, 0.05)',
-                border: '1px solid rgba(0, 255, 255, 0.2)'
-              }}>
-                <Clock size={24} color="var(--neon-cyan)" />
-                <div>
-                  <div className="body-medium" style={{ 
-                    color: 'var(--text-primary)',
-                    fontWeight: 600,
-                    marginBottom: '5px'
-                  }}>
-                    Time Slots
-                  </div>
-                  <div className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    Reserve specific training times
-                  </div>
-                </div>
-              </div>
-
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '15px',
-                padding: '20px',
-                background: 'rgba(255, 0, 255, 0.05)',
-                border: '1px solid rgba(255, 0, 255, 0.2)'
-              }}>
-                <Users size={24} color="var(--neon-magenta)" />
-                <div>
-                  <div className="body-medium" style={{ 
-                    color: 'var(--text-primary)',
-                    fontWeight: 600,
-                    marginBottom: '5px'
-                  }}>
-                    Capacity Management
-                  </div>
-                  <div className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    Ensure optimal training space
-                  </div>
-                </div>
-              </div>
-
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '15px',
-                padding: '20px',
-                background: 'rgba(138, 43, 226, 0.05)',
-                border: '1px solid rgba(138, 43, 226, 0.2)'
-              }}>
-                <AlertCircle size={24} color="var(--neon-purple)" />
-                <div>
-                  <div className="body-medium" style={{ 
-                    color: 'var(--text-primary)',
-                    fontWeight: 600,
-                    marginBottom: '5px'
-                  }}>
-                  Easy Cancellation
-                  </div>
-                  <div className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    Flexible booking modifications
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Coming Soon Message */}
-            <div style={{
-              background: 'linear-gradient(135deg, var(--neon-cyan)20, var(--neon-magenta)20)',
-              border: '2px solid var(--neon-cyan)',
-              padding: '30px',
-              maxWidth: '400px',
-              margin: '0 auto'
-            }}>
-              <div className="heading-4" style={{ 
-                color: 'var(--neon-cyan)',
-                marginBottom: '10px',
-                fontFamily: 'Orbitron, Arial, sans-serif'
-              }}>
-                COMING SOON
-              </div>
-              <div className="body-medium" style={{ color: 'var(--text-secondary)' }}>
-                The booking system will be developed and integrated here shortly.
-              </div>
-            </div>
           </div>
         </div>
       </div>
