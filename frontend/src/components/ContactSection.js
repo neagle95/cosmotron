@@ -305,10 +305,21 @@ const ContactSection = ({ data, contactData }) => {
                 <div style={{
                   textAlign: 'center',
                   padding: '40px',
-                  color: 'var(--brand-primary)'
+                  background: submitSuccess ? 'rgba(0, 255, 0, 0.1)' : 'rgba(255, 0, 0, 0.1)',
+                  borderRadius: '12px',
+                  border: `2px solid ${submitSuccess ? 'var(--brand-primary)' : '#ff0000'}`
                 }}>
-                  <CheckCircle size={48} style={{ marginBottom: '20px' }} />
-                  <p className="body-large">{submitMessage}</p>
+                  {submitSuccess ? (
+                    <CheckCircle size={48} color="var(--brand-primary)" style={{ marginBottom: '20px' }} />
+                  ) : (
+                    <Mail size={48} color="#ff0000" style={{ marginBottom: '20px' }} />
+                  )}
+                  <p className="body-large" style={{ 
+                    color: submitSuccess ? 'var(--brand-primary)' : '#ff0000',
+                    lineHeight: 1.6
+                  }}>
+                    {submitMessage}
+                  </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
