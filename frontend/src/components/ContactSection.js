@@ -444,25 +444,46 @@ const ContactSection = ({ data, contactData }) => {
             overflow: 'hidden'
           }}
         >
-          {/* Map placeholder with address */}
-          <div style={{
-            textAlign: 'center',
-            color: 'var(--text-secondary)'
-          }}>
-            <MapPin size={48} color="var(--brand-primary)" style={{ marginBottom: '20px' }} />
+          {/* Map with address */}
+          <div>
             <h4 className="heading-4" style={{ 
-              marginBottom: '10px',
-              color: 'var(--text-primary)'
+              marginBottom: '20px',
+              color: 'var(--text-primary)',
+              textAlign: 'center',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px'
             }}>
-              Find Us Here
+              <MapPin size={24} color="var(--brand-primary)" />
+              {contactData.findUs}
             </h4>
-            <p className="body-medium">{data.address}</p>
-            <p className="body-small" style={{ 
-              marginTop: '10px',
-              color: 'var(--text-muted)'
+            <p className="body-medium" style={{
+              textAlign: 'center',
+              marginBottom: '20px',
+              color: 'var(--text-secondary)'
             }}>
-              Interactive map will be integrated here
+              {data.address}
             </p>
+            {/* Google Maps Embed */}
+            <div style={{
+              width: '100%',
+              height: '400px',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              border: '2px solid var(--border-medium)'
+            }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.464!2d20.145516!3d46.246820!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4744873f7f9c8e89%3A0x5e0f1c1c1c1c1c1c!2sSzeged%2C%20K%C3%A1lv%C3%A1ria%20sgt.%2014%2C%206724%20Hungary!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Cosmotron Gym Location"
+              />
+            </div>
           </div>
         </div>
       </div>
