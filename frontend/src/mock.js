@@ -54,7 +54,7 @@ export const mockData = {
       rules: {
         purpose: {
           title: "Purpose of the Ranking",
-          text: "To motivate, recognize, and track the strongest members of the gym. The \"Top 10 Men\" and \"Top 10 Women\" lists include those who meet the conditions below."
+          text: "To motivate, recognize, and track the strongest members of the gym. The 'Top 10 Men' and 'Top 10 Women' lists include those who meet the conditions below."
         },
         whoCanAppear: {
           title: "Who can appear on the list?",
