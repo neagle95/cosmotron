@@ -178,7 +178,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                       color: 'var(--neon-cyan)',
                       fontFamily: 'Orbitron, Arial, sans-serif'
                     }}>
-                      {membership.type}
+                      {language === 'hu' ? membership.typeHu : membership.type}
                     </h4>
                     
                     <div className="heading-1" style={{ 
@@ -194,7 +194,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                       marginBottom: '20px',
                       fontFamily: 'Orbitron, Arial, sans-serif'
                     }}>
-                      {membership.validity}
+                      {language === 'hu' ? membership.validityHu : membership.validity}
                     </div>
                     
                     <p className="body-small" style={{ 
@@ -204,7 +204,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                       background: 'var(--bg-page)',
                       border: '1px solid var(--border-light)'
                     }}>
-                      {membership.note}
+                      {language === 'hu' ? membership.noteHu : membership.note}
                     </p>
                   </div>
                 </div>
