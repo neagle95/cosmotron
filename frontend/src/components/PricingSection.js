@@ -336,11 +336,11 @@ const PricingSection = ({ data, language, pricingData }) => {
                   fontWeight: 600,
                   fontFamily: 'Orbitron, Arial, sans-serif'
                 }}>
-                  IMPORTANT NOTES
+                  {pricingData.importantNotes}
                 </span>
               </div>
               <div className="body-medium" style={{ color: 'var(--text-secondary)' }}>
-                Prices include VAT • Invoices are provided in all cases
+                {pricingData.vatNote}
               </div>
             </div>
           </div>
