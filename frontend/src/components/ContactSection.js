@@ -182,13 +182,13 @@ const ContactSection = ({ data, contactData }) => {
                   </h4>
                   <div style={{ color: 'var(--text-secondary)' }}>
                     <p className="body-small" style={{ marginBottom: '5px' }}>
-                      <strong>Mon-Fri:</strong> {data.hours.weekdays}
+                      <strong>{contactData.followUs === 'Kövess Minket' ? 'Hét - Pén:' : 'Mon - Fri:'}</strong> {contactData.followUs === 'Kövess Minket' ? data.hours.weekdaysHu : data.hours.weekdays}
                     </p>
                     <p className="body-small" style={{ marginBottom: '5px' }}>
-                      <strong>Saturday:</strong> {data.hours.saturday}
+                      <strong>{contactData.followUs === 'Kövess Minket' ? 'Szombat:' : 'Saturday:'}</strong> {contactData.followUs === 'Kövess Minket' ? data.hours.saturdayHu : data.hours.saturday}
                     </p>
                     <p className="body-small">
-                      <strong>Sunday:</strong> {data.hours.sunday}
+                      <strong>{contactData.followUs === 'Kövess Minket' ? 'Vasárnap:' : 'Sunday:'}</strong> {contactData.followUs === 'Kövess Minket' ? data.hours.sundayHu : data.hours.sunday}
                     </p>
                   </div>
                 </div>
