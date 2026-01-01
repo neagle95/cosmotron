@@ -110,10 +110,10 @@ const Footer = ({ data, footerData, contactData, navigationData }) => {
                 display: 'flex',
                 gap: '12px'
               }}>
-                {Object.entries(data.socialMedia).map(([platform, handle]) => (
+                {Object.entries(data.socialMedia).map(([platform, info]) => (
                   <a
                     key={platform}
-                    href={`https://${platform}.com/${handle.replace('@', '')}`}
+                    href={info.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
