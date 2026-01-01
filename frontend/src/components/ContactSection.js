@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from 'lucide-react';
 
-const ContactSection = ({ data, contactData }) => {
+const ContactSection = ({ data, contactData, language }) => {
   const getSocialIcon = (platform) => {
     switch (platform.toLowerCase()) {
       case 'instagram': return <Instagram size={20} />;
