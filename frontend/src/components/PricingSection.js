@@ -71,7 +71,7 @@ const PricingSection = ({ data, language, pricingData }) => {
               marginBottom: '40px',
               fontFamily: 'Orbitron, Arial, sans-serif'
             }}>
-              DAY PASSES
+              {pricingData.dayPasses}
             </h3>
             
             <div style={{
