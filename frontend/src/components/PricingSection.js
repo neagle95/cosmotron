@@ -127,7 +127,7 @@ const PricingSection = ({ data, language, pricingData }) => {
               marginBottom: '40px',
               fontFamily: 'Orbitron, Arial, sans-serif'
             }}>
-              MEMBERSHIPS
+              {pricingData.memberships}
             </h3>
             
             <div style={{
