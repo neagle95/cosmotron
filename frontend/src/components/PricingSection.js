@@ -285,7 +285,7 @@ const PricingSection = ({ data, language, pricingData }) => {
               display: 'grid',
               gap: '20px'
             }}>
-              {data.rules.map((rule, index) => (
+              {(language === 'hu' ? data.rulesHu : data.rules).map((rule, index) => (
                 <div
                   key={index}
                   style={{
@@ -301,7 +301,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                     color: 'var(--neon-cyan)',
                     marginTop: '2px'
                   }}>
-                    {rule.includes('cannot') || rule.includes('non-transferable') ? 
+                    {rule.includes('cannot') || rule.includes('non-transferable') || rule.includes('nem') || rule.includes('elveszett') ? 
                       <X size={18} /> : 
                       <Check size={18} />
                     }
