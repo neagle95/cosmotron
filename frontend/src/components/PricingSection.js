@@ -47,7 +47,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                 fontFamily: 'Orbitron, Arial, sans-serif'
               }}
             >
-              DAY PASSES
+              {pricingData.dayPasses}
             </button>
             
             <button
@@ -58,7 +58,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                 fontFamily: 'Orbitron, Arial, sans-serif'
               }}
             >
-              MEMBERSHIPS
+              {pricingData.memberships}
             </button>
           </div>
         </div>
