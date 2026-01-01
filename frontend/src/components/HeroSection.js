@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HeroSection = ({ data }) => {
+const HeroSection = ({ data, navigationData }) => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
