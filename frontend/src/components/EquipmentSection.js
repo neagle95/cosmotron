@@ -114,7 +114,7 @@ const EquipmentSection = ({ data, language }) => {
                     letterSpacing: '0.02em',
                     fontFamily: 'Orbitron, Arial, sans-serif'
                   }}>
-                    {equipment.name}
+                    {language === 'hu' ? equipment.nameHu : equipment.name}
                   </h3>
                 </div>
               </div>
