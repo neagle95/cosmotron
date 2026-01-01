@@ -522,8 +522,14 @@ export const mockData = {
       sundayHu: "8:00 - 14:00"
     },
     socialMedia: {
-      instagram: "@cosmotrongym",
-      facebook: "Cosmoton Gym"
+      instagram: {
+        handle: "@cosmotrongym",
+        url: "https://www.instagram.com/cosmotrongym/"
+      },
+      facebook: {
+        handle: "Cosmotron Gym",
+        url: "https://www.facebook.com/profile.php?id=61585368807646"
+      }
     },
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.4644871658876!2d20.145515776455847!3d46.24681997112442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4744873a5e8c3c3b%3A0x9f8e4e7c4e7c4e7c!2sSzeged%2C%20K%C3%A1lv%C3%A1ria%20sgt.%2014%2C%206724!5e0!3m2!1sen!2shu!4v1234567890123!5m2!1sen!2shu"
   }
