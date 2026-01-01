@@ -126,7 +126,7 @@ const EquipmentSection = ({ data, language }) => {
                   color: 'var(--text-secondary)',
                   marginBottom: '20px'
                 }}>
-                  {equipment.description}
+                  {language === 'hu' ? equipment.descriptionHu : equipment.description}
                 </p>
 
                 {/* Equipment Features/Specs */}
