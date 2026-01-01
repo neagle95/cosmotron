@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { CreditCard, Banknote, Smartphone, FileText, Star, Check, X, AlertCircle } from 'lucide-react';
 
-const PricingSection = ({ data }) => {
+const PricingSection = ({ data, language, pricingData }) => {
   const [activeTab, setActiveTab] = useState('memberships');
 
   const getPaymentIcon = (method) => {
-    if (method.includes('Cash')) return <Banknote size={18} />;
-    if (method.includes('Bank card')) return <CreditCard size={18} />;
+    if (method.includes('Cash') || method.includes('Készpénz')) return <Banknote size={18} />;
+    if (method.includes('Bank card') || method.includes('Bankkártya')) return <CreditCard size={18} />;
     if (method.includes('Revolut')) return <Smartphone size={18} />;
     return <CreditCard size={18} />;
   };
@@ -20,7 +20,7 @@ const PricingSection = ({ data }) => {
         {/* Section Header */}
         <div className="text-center mb-large">
           <h2 className="heading-1 fade-in neon-text-magenta" style={{ marginBottom: '30px' }}>
-            PRICING
+            {pricingData.title}
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
@@ -28,7 +28,7 @@ const PricingSection = ({ data }) => {
             color: 'var(--text-secondary)',
             marginBottom: '40px'
           }}>
-            Choose the membership that fits your training goals and budget.
+            {pricingData.subtitle}
           </p>
 
           {/* Tab Selector */}
