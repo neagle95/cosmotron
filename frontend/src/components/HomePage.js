@@ -43,7 +43,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <HeroSection data={data.hero} />
+      <HeroSection data={data.hero} navigationData={data.navigation} />
       <AboutSection data={data.about} />
       <LeaderboardSection data={mockData.leaderboard} leaderboardData={data.leaderboard} />
       <BookingSection data={data.booking} />
