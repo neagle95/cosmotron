@@ -96,7 +96,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                     color: 'var(--neon-cyan)',
                     fontFamily: 'Orbitron, Arial, sans-serif'
                   }}>
-                    {pass.type}
+                    {language === 'hu' ? pass.typeHu : pass.type}
                   </h4>
                   
                   <div className="heading-1" style={{ 
@@ -111,7 +111,7 @@ const PricingSection = ({ data, language, pricingData }) => {
                     color: 'var(--text-secondary)',
                     lineHeight: 1.5
                   }}>
-                    {pass.note}
+                    {language === 'hu' ? pass.noteHu : pass.note}
                   </p>
                 </div>
               ))}
