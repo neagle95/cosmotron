@@ -101,7 +101,7 @@ const HeroSection = ({ data, navigationData }) => {
                 padding: '1.2em 2.5em'
               }}
             >
-              PRICING
+              {navigationData?.pricing || 'PRICING'}
             </button>
             
             <button 
@@ -112,7 +112,7 @@ const HeroSection = ({ data, navigationData }) => {
                 padding: '1.2em 2.5em'
               }}
             >
-              LEADERBOARD
+              {navigationData?.leaderboard || 'LEADERBOARD'}
             </button>
           </div>
         </div>
