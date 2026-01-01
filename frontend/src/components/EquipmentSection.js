@@ -1,12 +1,12 @@
 import React from 'react';
 import { Dumbbell, Award, Shield, Zap, Cpu, Settings, Database, HardDrive } from 'lucide-react';
 
-const EquipmentSection = ({ data }) => {
+const EquipmentSection = ({ data, language }) => {
   const getEquipmentIcon = (name) => {
-    if (name.includes('MATRICES')) return <Database size={24} />;
-    if (name.includes('MASS UNITS')) return <HardDrive size={24} />;
-    if (name.includes('PLATFORMS')) return <Cpu size={24} />;
-    if (name.includes('MONOLIFT')) return <Settings size={24} />;
+    if (name.includes('MATRICES') || name.includes('TÁRCSÁK')) return <Database size={24} />;
+    if (name.includes('MASS UNITS') || name.includes('RÚDAK')) return <HardDrive size={24} />;
+    if (name.includes('PLATFORMS') || name.includes('ÁLLVÁNYOK')) return <Cpu size={24} />;
+    if (name.includes('MONOLIFT') || name.includes('GÉPEK')) return <Settings size={24} />;
     return <Dumbbell size={24} />;
   };
 
@@ -19,14 +19,16 @@ const EquipmentSection = ({ data }) => {
         {/* Section Header */}
         <div className="text-center mb-large">
           <h2 className="heading-1 fade-in neon-text-magenta" style={{ marginBottom: '30px' }}>
-            EQUIPMENT
+            {language === 'hu' ? 'FELSZERELÉS' : 'EQUIPMENT'}
           </h2>
           <p className="body-large fade-in" style={{ 
             maxWidth: '600px',
             margin: '0 auto',
             color: 'var(--text-secondary)'
           }}>
-            Train with competition-grade equipment that exceeds international powerlifting standards.
+            {language === 'hu' 
+              ? 'Edzz versenyminőségű felszerelésekkel, amelyek meghaladják a nemzetközi erőemelési szabványokat.'
+              : 'Train with competition-grade equipment that exceeds international powerlifting standards.'}
           </p>
         </div>
 
