@@ -210,7 +210,7 @@ export const mockData = {
     hero: {
       title: "COSMOTRON",
       slogan: "ERŐ A GRAVITÁCIÓN TÚL",
-      subtitle: "Egy erőemelésre szakosodott edzőterem, ahol kezdők, visszatérő sportolók és profi versenyzők egyaránt megtalálhatják a helyüket Szegeden.",
+      subtitle: "Egy erőemelésre szakosodott edzőterem, ahol kezdők, visszatérő sportolók és profi versenyzők egyaránt megtalálhatják a helyüket.",
       backgroundImage: "https://customer-assets.emergentagent.com/job_cosmotron-lift/artifacts/y7cv6qi4_file_0000000015586230bbc3a706feb53869_conversation_id%3D67ffb4f5-5e74-8012-b17e-3fbcd28753a7%26message_id%3D829414af-438b-439d-ab88-a793497798f3.png",
       buttons: {
         pricing: "ÁRAK",
@@ -222,7 +222,7 @@ export const mockData = {
     about: {
       title: "RÓLUNK",
       description: "A Cosmotron egy erőemelésre szakosodott edzőterem, ahol kezdők, visszatérő sportolók és profi versenyzők egyaránt megtalálhatják a helyüket. Célunk mindenki fejlődése – ezért nemcsak erőemelőket, hanem mindenkit szívesen látunk, aki erősebbé, tudatosabbá vagy egyszerűen aktívabbá szeretne válni.",
-      philosophy: "Közösségünk középpontjában a teljesítmény, a technika és az egység áll – ennek ünneplésére indítottuk el a Cosmotron Ranglistát, amely edzőtermünk és Szeged város legerősebb emelőit mutatja be. Lépj be. Mutasd meg az erődet. Kerülj fel a listára.",
+      philosophy: "Közösségünk középpontjában a teljesítmény, a technika és az egység áll – ennek örömére indítottuk el a Cosmotron Ranglistát, amely edzőtermünk és Szeged város legerősebb erőemelőit mutatja be. Lépj be. Mutasd meg az erődet. Kerülj fel a listára.",
       stats: [
         { number: "Top 10", label: "Ranglista Helyezés", clickable: true, navigateTo: "leaderboard" }
       ]
@@ -241,7 +241,7 @@ export const mockData = {
     // Leaderboard Section
     leaderboard: {
       title: "RANGLISTA",
-      subtitle: "Edzőtermünk és Szeged város legerősebb emelői.",
+      subtitle: "Edzőtermünk és Szeged legerősebb emelői.",
       topMen: "TOP 10 FÉRFI",
       topWomen: "TOP 10 NŐ",
       headers: {
@@ -251,14 +251,14 @@ export const mockData = {
         squat: "GUGGOLÁS",
         bench: "FEKVE NYOMÁS",
         deadlift: "FELHÚZÁS",
-        total: "ÖSSZESEN",
+        total: "TOTAL",
         dots: "DOTS"
       },
       howToGetOn: "HOGYAN KERÜLHETEK FEL A LISTÁRA?",
       rules: {
         purpose: {
           title: "A rangsor célja",
-          text: "Motiválni, elismerést adni és nyomon követni az edzőterem legerősebb tagjait. A 'Top 10 férfi' és 'Top 10 nő' listákra azok kerülnek fel, akik megfelelnek az alábbi feltételeknek."
+          text: "Motiválni, elismerni és nyomonkövetni az edzőterem legerősebb tagjait. A 'Top 10 férfi' és 'Top 10 nő' listákra azok kerülnek fel, akik megfelelnek az alábbi feltételeknek."
         },
         whoCanAppear: {
           title: "Ki kerülhet fel a listára?",
@@ -271,50 +271,50 @@ export const mockData = {
         whatCounts: {
           title: "Milyen eredmények számítanak?",
           items: [
-            "RAW erőemelő összesített: guggolás + fekve nyomás + felhúzás",
-            "Minden emelést ugyanazon a napon kell teljesíteni (egy edzésen belül).",
-            "Csak az edzőterem tulajdonosa által elfogadott, szabályosan végrehajtott emelések érvényesek."
+            "RAW erőemelő összesített: guggolás + fekvenyomás + felhúzás",
+            "Minden gyakorlatot ugyanazon a napon kell teljesíteni (egy edzésen belül).",
+            "Csak az edzőterem tulajdonosa által elfogadott, szabályosan végrehajtott gyakorlatok érvényesek."
           ]
         },
         howToGet: {
           title: "Hogyan kerülhetek fel a listára?",
           intro: "A kísérleteket előre be kell jelenteni (legalább 48 órával), hogy az edzőterem tulajdonosa jelen lehessen.",
-          exercises: "A gyakorlatokat a Magyar Erőemelő Szövetség szabályai szerint kell végrehajtani (további részletek: https://powerlifting.hu/hu/#links – versenyszabályok):",
+          exercises: "A gyakorlatokat a Magyar Professzionális Erőemelő Liga szabályai szerint kell végrehajtani (további részletek: https://powerlifting.hu/hu/#links – versenyszabályok):",
           exerciseRules: [
-            "Guggolás: mélység a térdvonal alatt",
-            "Fekve nyomás: kontrollált, megállított",
+            "Guggolás: mélység; csípő a térdvonal alatt",
+            "Fekvenyomás: kontrollált, megállított",
             "Felhúzás: a rúd nem csúszhat ki a kézből, nem elejthető"
           ],
           commands: {
             title: "Parancsok",
             list: [
-              "Guggolás: Squat; Down",
-              "Fekve nyomás: Start; Press; Rack",
-              "Felhúzás: Down"
+              "Guggolás: SQUAT; LE",
+              "Fekvenyomás: START; PRESS; LE",
+              "Felhúzás: LE"
             ]
           },
           clothing: {
             title: "Öltözet",
             allowed: [
-              "trikó (ha van)",
+              "kantáros mez (ha van)",
               "póló",
-              "rövidnadrág (ha nem használsz trikót)",
+              "rövidnadrág (ha nincs kantáros mez)",
               "öv",
-              "csuklószorító",
+              "csuklóbandázs",
               "térdig érő zokni (felhúzáshoz)",
               "cipő (guggolócipő, felhúzó papucs vagy bármilyen edzőcipő)",
-              "térdszorító VAGY térdvédő"
+              "térdgumi VAGY térdbandázs (CSAK AZ EGYIK)"
             ],
-            notAllowed: "NEM engedélyezett: könyökvédő, felszerelt felszerelés, pánt vagy bármilyen más, az 'Öltözet' alatt fel nem sorolt felszerelés."
+            notAllowed: "NEM engedélyezett: könyökvédő, megerősített ruházat, pánt vagy bármilyen más, az 'Öltözet' alatt fel nem sorolt felszerelés."
           },
-          verification: "A teljesítményt az edzőterem tulajdonosa ellenőrzi, és feljegyzést készít."
+          verification: "A teljesítményt az edzőterem tulajdonosa ellenőrzi."
         },
         weightClass: {
           title: "Súlycsoport, nem, rangsorolás",
           items: [
             "Külön listák férfiak és nők számára.",
             "Nincsenek súlycsoportok; a rangsorolás DOTS alapján történik (https://strengthinumbrs.com/dots-calculator/).",
-            "A mérlegelés az edzőterem mérlegén történhet a kísérlet napján vagy 24 órával korábban (ha előre bejelentve)."
+            "A mérlegelés az edzőterem mérlegén történhet a kísérlet napján vagy 24 órával korábban (ha előre be van jelentve)."
           ]
         },
         updates: {
@@ -328,7 +328,7 @@ export const mockData = {
         rewards: {
           title: "Jutalmak és elismerés",
           items: [
-            "A Top 10 sportolók nevei és eredményei megjelennek a falon, valamint a weboldalon / közösségi médiában.",
+            "A Top 10 sportoló neve és eredménye megjelenik a falon, valamint a weboldalon / közösségi médiában.",
             "Év végén a Top 3 férfi és nő különleges jutalmakat kap (pl. tagsági bérlet, ajándékok, verseny támogatás)."
           ]
         },
@@ -336,7 +336,7 @@ export const mockData = {
           title: "Dokumentáció és átláthatóság",
           items: [
             "Minden kísérletet videóra rögzítünk a tisztességes értékelés érdekében.",
-            "A jelenlegi lista nyilvános és elérhető az edzőteremben és online.",
+            "A lista nyilvános és elérhető az edzőteremben és online.",
             "A résztvevők beleegyeznek, hogy nevük és képük megjelenjen.",
             "Kérésre legfeljebb 2 segítőt hozhatsz; ha nem edznek, számukra ingyenes a belépés."
           ]
@@ -351,22 +351,22 @@ export const mockData = {
     // Booking Section  
     booking: {
       title: "FOGLALÁS",
-      subtitle: "Időpontot egyeztess velünk a ranglista kísérletedhez.",
-      mainText: "Az időpontegyeztetés e-mailben vagy személyesen a recepcióban történik.",
+      subtitle: "Egyeztess velünk időpontot a ranglista kísérletedhez.",
+      mainText: "Az időpontegyeztetés e-mailben vagy személyesen a recepción történik.",
       coordinationText: "Ha az általad választott időpont már foglalt, e-mailben (vagy személyesen) folytatjuk az egyeztetést.",
       weighInTitle: "Két lehetőséged van a mérlegelésre:",
       weighInOptions: [
         "24 órával a megbeszélt időpont előtt, VAGY",
-        "1 órával a megbeszélt időpont előtt (ha ugyannapi mérlegelést választasz)."
+        "1 órával a megbeszélt időpont előtt (ha aznapi mérlegelést választasz)."
       ],
       exampleTitle: "Példa e-mail:",
-      exampleText: "'Szia, X.Y. vagyok, szeretnék kedden 10:00-kor emelést kísérelni, ugyannapi mérlegeléssel.'"
+      exampleText: "'Szia, X.Y. vagyok, szeretnék kedden 10:00-kor kísérletet tenni, aznapi mérlegeléssel.'"
     },
 
     // Equipment Section
     equipment: {
       title: "FELSZERELÉS", 
-      subtitle: "Edzz versenyminőségű felszerelésekkel, amelyek meghaladják a nemzetközi erőemelési szabványokat.",
+      subtitle: "Edzz versenyminőségű felszerelésekkel",
       specs: "✓ VERSENY MINŐSÉG ✓ IPF MINŐSÍTETT ✓ ELIT SPECIFIKÁCIÓ"
     },
 
@@ -385,7 +385,7 @@ export const mockData = {
     // Contact Section
     contact: {
       title: "KAPCSOLAT",
-      subtitle: "Készen állsz az erőnlét utazás kezdésére? Látogass meg, hívj fel, vagy küldj üzenetet.",
+      subtitle: "Készen állsz az erőnléti utazás kezdésére? Látogass meg, hívj fel, vagy küldj üzenetet.",
       visitUs: "LÁTOGASS EL HOZZÁNK",
       sendMessage: "KÜLDJ ÜZENETET",
       address: "Cím",
@@ -443,16 +443,16 @@ export const mockData = {
       id: 1,
       name: "CALIBRATED PLATES",
       nameHu: "KALIBRÁLT TÁRCSÁK",
-      description: "Competition-grade calibrated plates meeting IPF standards for precise weight measurements.",
-      descriptionHu: "Versenyminőségű kalibrált tárcsák, amelyek megfelelnek az IPF szabványoknak a precíz súlyméréshez.",
+      description: "Competition-grade calibrated plates meeting IPF standards.",
+      descriptionHu: "Versenyminőségű kalibrált tárcsák, amelyek megfelelnek az IPF szabványoknak.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     },
     {
       id: 2,
       name: "COMPETITION BARBELLS",
-      nameHu: "VERSENY RÚDAK",
+      nameHu: "VERSENY RUDAK",
       description: "IPF-approved competition barbells for squat, bench press, and deadlift with proper specifications.",
-      descriptionHu: "IPF által jóváhagyott verseny rúdak guggoláshoz, fekve nyomáshoz és felhúzáshoz megfelelő specifikációkkal.",
+      descriptionHu: "IPF által jóváhagyott verseny rudak guggoláshoz, fekvenyomáshoz és felhúzáshoz megfelelő specifikációkkal.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
@@ -460,15 +460,15 @@ export const mockData = {
       name: "COMBO RACKS",
       nameHu: "KOMBINÁLT ÁLLVÁNYOK",
       description: "Versatile combo racks for safe squatting and bench pressing with adjustable safety settings.",
-      descriptionHu: "Sokoldalú kombinált állványok biztonságos guggoláshoz és fekve nyomáshoz állítható biztonsági beállításokkal.",
+      descriptionHu: "Sokoldalú kombinált állványok biztonságos guggoláshoz és fekvenyomáshoz állítható biztonsági beállításokkal.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3"
     },
     {
       id: 4,
       name: "MACHINES & ACCESSORIES",
       nameHu: "GÉPEK ÉS KIEGÉSZÍTŐK",
-      description: "Supporting machines and accessories for auxiliary work and comprehensive strength training.",
-      descriptionHu: "Kiegészítő gépek és tartozékok segéd munkához és átfogó erőfejlesztő edzéshez.",
+      description: "Supporting machines and accessories for strength training.",
+      descriptionHu: "Kiegészítő gépek és tartozékok erőfejlesztő edzéshez.",
       image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3"
     }
   ],
@@ -476,33 +476,31 @@ export const mockData = {
   // Pricing Plans (same for both languages) 
   pricing: {
     dayPasses: [
-      { type: "Day Pass", typeHu: "Napi Bérlet", price: "2,000 Ft", note: "Single entry", noteHu: "Egyszeri belépés" },
-      { type: "Student Day Pass", typeHu: "Diák Napi Bérlet", price: "1,500 Ft", note: "Valid with student ID, up to age 23, single entry", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, egyszeri belépés" },
+      { type: "Day Pass", typeHu: "Napijegy", price: "2,000 Ft", note: "Single entry", noteHu: "Egyszeri belépés" },
+      { type: "Student Day Pass", typeHu: "Diák Napijegy", price: "1,500 Ft", note: "Valid with student ID, up to age 23, single entry", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, egyszeri belépés" },
       { type: "Master Day Pass", typeHu: "Master Napi Bérlet", price: "1,500 Ft", note: "For ages 60+, single entry", noteHu: "60 év felettieknek, egyszeri belépés" }
     ],
     memberships: [
-      { type: "10-Session Pass", typeHu: "10 Alkalmas Bérlet", price: "15,000 Ft", validity: "60 days", validityHu: "60 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmazza 1 ranglista kísérletet", popular: false },
-      { type: "Monthly Pass", typeHu: "Havi Bérlet", price: "15,000 Ft", validity: "30 days", validityHu: "30 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmazza 1 ranglista kísérletet", popular: false },
-      { type: "Student Monthly Pass", typeHu: "Diák Havi Bérlet", price: "12,000 Ft", validity: "30 days", validityHu: "30 nap", note: "Valid with student ID, up to age 23, includes 1 leaderboard attempt", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, tartalmazza 1 ranglista kísérletet", popular: false },
-      { type: "Master Monthly Pass", typeHu: "Master Havi Bérlet", price: "12,000 Ft", validity: "30 days", validityHu: "30 nap", note: "For ages 60+, includes 1 leaderboard attempt", noteHu: "60 év felettieknek, tartalmazza 1 ranglista kísérletet", popular: false },
-      { type: "6-Month Pass", typeHu: "6 Hónapos Bérlet", price: "63,000 Ft", validity: "6 months", validityHu: "6 hónap", note: "Includes 1 leaderboard attempt per month", noteHu: "Havonta 1 ranglista kísérletet tartalmaz", popular: false },
-      { type: "Annual Pass", typeHu: "Éves Bérlet", price: "126,000 Ft", validity: "12 months", validityHu: "12 hónap", note: "Includes 1 leaderboard attempt per month", noteHu: "Havonta 1 ranglista kísérletet tartalmaz", popular: false },
+      { type: "10-Session Pass", typeHu: "10 Alkalmas Bérlet", price: "12,000 Ft", validity: "60 days", validityHu: "60 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmaz 1 ranglista kísérletet", popular: false },
+      { type: "Monthly Pass", typeHu: "Havi Bérlet", price: "12,000 Ft", validity: "30 days", validityHu: "30 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmaz 1 ranglista kísérletet", popular: false },
+      { type: "Student Monthly Pass", typeHu: "Diák Havi Bérlet", price: "10,000 Ft", validity: "30 days", validityHu: "30 nap", note: "Valid with student ID, up to age 23, includes 1 leaderboard attempt", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, tartalmaz 1 ranglista kísérletet", popular: false },
+      { type: "Master Monthly Pass", typeHu: "Master Havi Bérlet", price: "10,000 Ft", validity: "30 days", validityHu: "30 nap", note: "For ages 60+, includes 1 leaderboard attempt", noteHu: "60 év felettieknek, tartalmaz 1 ranglista kísérletet", popular: false },
+      { type: "6-Month Pass", typeHu: "6 Hónapos Bérlet", price: "68,000 Ft", validity: "6 months", validityHu: "6 hónap", note: "Includes 1 leaderboard attempt per month", noteHu: "Havonta 1 ranglista kísérletet tartalmaz", popular: false },
+      { type: "Annual Pass", typeHu: "Éves Bérlet", price: "134,000 Ft", validity: "12 months", validityHu: "12 hónap", note: "Includes 1 leaderboard attempt per month", noteHu: "Havonta 1 ranglista kísérletet tartalmaz", popular: false },
       { type: "Leaderboard Entry", typeHu: "Ranglista Belépés", price: "5,000 Ft / attempt", validity: "–", validityHu: "–", note: "For multiple leaderboard attempts per month", noteHu: "Több havi ranglista kísérlethez", popular: false }
     ],
-    paymentMethods: ["Cash", "Bank card (POS terminal)", "Revolut / Bank transfer"],
-    paymentMethodsHu: ["Készpénz", "Bankkártya (POS terminál)", "Revolut / Banki átutalás"],
+    paymentMethods: ["Cash", "Bank transfer"],
+    paymentMethodsHu: ["Készpénz", "Banki átutalás"],
     rules: [
       "Memberships are personal and non-transferable.",
       "Lost passes cannot be replaced.",
       "In case of illness, validity can be extended upon request.",
-      "Prices include VAT.",
       "Invoices are provided in all cases."
     ],
     rulesHu: [
-      "A tagságok személyesek és át nem ruházhatók.",
-      "Az elveszett bérleteket nem lehet pótolni.",
+      "A bérletek személyreszólóak és át nem ruházhatók.",
+      "Az elveszett bérleteket nem áll módunkban pótolni.",
       "Betegség esetén kérésre a érvényesség meghosszabbítható.",
-      "Az árak tartalmazzák az ÁFÁ-t.",
       "Minden esetben számlát biztosítunk."
     ]
   },
@@ -516,17 +514,16 @@ export const mockData = {
     email: "cosmotrongym@gmail.com",
     emailHu: "cosmotrongym@gmail.com",
     hours: {
-      weekdays: "Mon - Sat: 6:00 - 22:00",
-      weekdaysHu: "Hét - Szo: 6:00 - 22:00",
-      saturday: "Mon - Sat: 6:00 - 22:00", 
-      saturdayHu: "Hét - Szo: 6:00 - 22:00",
-      sunday: "Sunday: 8:00 - 14:00",
-      sundayHu: "Vasárnap: 8:00 - 14:00"
+      weekdays: "6:00 - 22:00",
+      weekdaysHu: "6:00 - 22:00",
+      saturday: "6:00 - 22:00", 
+      saturdayHu: "6:00 - 22:00",
+      sunday: "8:00 - 14:00",
+      sundayHu: "8:00 - 14:00"
     },
     socialMedia: {
-      instagram: "@cosmotron_szeged",
-      facebook: "CosmotronSzeged",
-      tiktok: "@cosmotrongym"
+      instagram: "@cosmotrongym",
+      facebook: "Cosmoton Gym"
     },
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.4644871658876!2d20.145515776455847!3d46.24681997112442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4744873a5e8c3c3b%3A0x9f8e4e7c4e7c4e7c!2sSzeged%2C%20K%C3%A1lv%C3%A1ria%20sgt.%2014%2C%206724!5e0!3m2!1sen!2shu!4v1234567890123!5m2!1sen!2shu"
   }
