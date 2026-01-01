@@ -220,7 +220,7 @@ const PricingSection = ({ data, language, pricingData }) => {
             marginBottom: '40px',
             fontFamily: 'Orbitron, Arial, sans-serif'
           }}>
-            PAYMENT METHODS
+            {pricingData.paymentMethods}
           </h3>
           
           <div style={{
@@ -229,7 +229,7 @@ const PricingSection = ({ data, language, pricingData }) => {
             gap: '30px',
             flexWrap: 'wrap'
           }}>
-            {data.paymentMethods.map((method, index) => (
+            {(language === 'hu' ? data.paymentMethodsHu : data.paymentMethods).map((method, index) => (
               <div
                 key={index}
                 style={{
