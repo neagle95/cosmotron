@@ -445,7 +445,7 @@ export const mockData = {
       nameHu: "KALIBRÁLT TÁRCSÁK",
       description: "Competition-grade calibrated plates meeting IPF standards.",
       descriptionHu: "Versenyminőségű kalibrált tárcsák, amelyek megfelelnek az IPF szabványoknak.",
-      image: "https://images.pexels.com/photos/669577/pexels-photo-669577.jpeg"
+      image: "https://customer-assets.emergentagent.com/job_cosmotron-live/artifacts/05vy43w0_calibrated%20plates.png"
     },
     {
       id: 2,
@@ -453,7 +453,7 @@ export const mockData = {
       nameHu: "VERSENY RUDAK",
       description: "IPF-approved competition barbells for squat, bench press, and deadlift with proper specifications.",
       descriptionHu: "IPF által jóváhagyott verseny rudak guggoláshoz, fekvenyomáshoz és felhúzáshoz megfelelő specifikációkkal.",
-      image: "https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg"
+      image: "https://customer-assets.emergentagent.com/job_cosmotron-live/artifacts/wyrt1xzq_competition%20barbells.png"
     },
     {
       id: 3,
@@ -461,7 +461,7 @@ export const mockData = {
       nameHu: "KOMBINÁLT ÁLLVÁNYOK",
       description: "Versatile combo racks for safe squatting and bench pressing with adjustable safety settings.",
       descriptionHu: "Sokoldalú kombinált állványok biztonságos guggoláshoz és fekvenyomáshoz állítható biztonsági beállításokkal.",
-      image: "https://images.unsplash.com/photo-1646656130630-07af3a262a9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHJhY2slMjBzcXVhdHxlbnwwfHx8fDE3NjczMDY2NDB8MA&ixlib=rb-4.1.0&q=85"
+      image: "https://customer-assets.emergentagent.com/job_cosmotron-live/artifacts/p1ka5wwy_combo%20racks.png"
     },
     {
       id: 4,
@@ -469,7 +469,7 @@ export const mockData = {
       nameHu: "GÉPEK ÉS KIEGÉSZÍTŐK",
       description: "Supporting machines and accessories for strength training.",
       descriptionHu: "Kiegészítő gépek és tartozékok erőfejlesztő edzéshez.",
-      image: "https://images.unsplash.com/photo-1669807164466-10a6584a067e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxneW0lMjBtYWNoaW5lcyUyMHN0cmVuZ3RofGVufDB8fHx8MTc2NzMwNjY1MXww&ixlib=rb-4.1.0&q=85"
+      image: "https://customer-assets.emergentagent.com/job_cosmotron-live/artifacts/xszp0jg6_machines%20and%20accessories.png"
     }
   ],
 
