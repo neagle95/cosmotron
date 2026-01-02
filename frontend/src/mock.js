@@ -478,7 +478,7 @@ export const mockData = {
     dayPasses: [
       { type: "Day Pass", typeHu: "Napijegy", price: "2,000 Ft", note: "Single entry", noteHu: "Egyszeri belépés" },
       { type: "Student Day Pass", typeHu: "Diák Napijegy", price: "1,500 Ft", note: "Valid with student ID, up to age 23, single entry", noteHu: "Diákigazolvánnyal érvényes, 23 éves korig, egyszeri belépés" },
-      { type: "Master Day Pass", typeHu: "Master Napi Bérlet", price: "1,500 Ft", note: "For ages 60+, single entry", noteHu: "60 év felettieknek, egyszeri belépés" }
+      { type: "Master Day Pass", typeHu: "Master Napijegy", price: "1,500 Ft", note: "For ages 60+, single entry", noteHu: "60 év felettieknek, egyszeri belépés" }
     ],
     memberships: [
       { type: "10-Session Pass", typeHu: "10 Alkalmas Bérlet", price: "12,000 Ft", validity: "60 days", validityHu: "60 nap", note: "One entry per day, includes 1 leaderboard attempt", noteHu: "Napi egy belépés, tartalmaz 1 ranglista kísérletet", popular: false },
