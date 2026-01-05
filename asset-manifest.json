@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.632b8be1.css",
-    "main.js": "/static/js/main.3200a60a.js",
-    "index.html": "/index.html",
-    "main.632b8be1.css.map": "/static/css/main.632b8be1.css.map",
-    "main.3200a60a.js.map": "/static/js/main.3200a60a.js.map"
+    "main.css": "/cosmotron/static/css/main.632b8be1.css",
+    "main.js": "/cosmotron/static/js/main.c01364f9.js",
+    "index.html": "/cosmotron/index.html",
+    "main.632b8be1.css.map": "/cosmotron/static/css/main.632b8be1.css.map",
+    "main.c01364f9.js.map": "/cosmotron/static/js/main.c01364f9.js.map"
   },
   "entrypoints": [
     "static/css/main.632b8be1.css",
-    "static/js/main.3200a60a.js"
+    "static/js/main.c01364f9.js"
   ]
 }
