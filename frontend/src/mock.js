@@ -514,12 +514,12 @@ export const mockData = {
     email: "cosmotrongym@gmail.com",
     emailHu: "cosmotrongym@gmail.com",
     hours: {
-      weekdays: "6:00 - 22:00",
-      weekdaysHu: "6:00 - 22:00",
-      saturday: "6:00 - 22:00", 
-      saturdayHu: "6:00 - 22:00",
-      sunday: "8:00 - 14:00",
-      sundayHu: "8:00 - 14:00"
+      weekdays: "8:00 - 22:00",
+      weekdaysHu: "8:00 - 22:00",
+      saturday: "8:00 - 22:00", 
+      saturdayHu: "8:00 - 22:00",
+      sunday: "8:00 - 12:00",
+      sundayHu: "8:00 - 12:00"
     },
     socialMedia: {
       instagram: {
