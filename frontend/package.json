@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://cosmotron.hu",
+  "homepage": "https://neagle95.github.io/cosmotron",
   "private": true,
   "dependencies": {
     "ajv": "^8.12.0",
